@@ -17,7 +17,7 @@ addon = Addon(addonID, sys.argv)
 local = xbmcaddon.Addon(id=addonID)
 icon = local.getAddonInfo('icon')
 
-YOUTUBE_CHANNEL_ID = "PBSNewsHour"
+YOUTUBE_CHANNEL_ID = "pbsnewshour"
 
 # Entry point
 def run():
