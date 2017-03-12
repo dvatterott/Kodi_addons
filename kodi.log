@@ -1,0 +1,976 @@
+﻿21:00:30 T:140247702665664  NOTICE: special://profile/ is mapped to: special://masterprofile/
+21:00:30 T:140247702665664  NOTICE: -----------------------------------------------------------------------
+21:00:30 T:140247702665664  NOTICE: Starting Kodi from Debian (15.2 Git: (unknown)). Platform: Linux x86 64-bit
+21:00:30 T:140247702665664  NOTICE: Using Release Kodi from Debian x64 build
+21:00:30 T:140247702665664  NOTICE: Kodi from Debian compiled from 15.2+dfsg1-3ubuntu1 by GCC 5.3.1 for Linux x86 64-bit version 4.4.6 (263174)
+21:00:30 T:140247702665664  NOTICE: Running on KDE neon User Edition 5.9 16.04, kernel: Linux x86 64-bit version 4.4.0-65-generic
+21:00:30 T:140247702665664  NOTICE: FFmpeg version: 2.8.6-1ubuntu2
+21:00:30 T:140247702665664  NOTICE: Host CPU: Intel(R) Core(TM) i5-2467M CPU @ 1.60GHz, 4 cores available
+21:00:30 T:140247702665664  NOTICE: special://xbmc/ is mapped to: /usr/share/kodi
+21:00:30 T:140247702665664  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/x86_64-linux-gnu/kodi
+21:00:30 T:140247702665664  NOTICE: special://masterprofile/ is mapped to: /home/dan-laptop/.kodi/userdata
+21:00:30 T:140247702665664  NOTICE: special://home/ is mapped to: /home/dan-laptop/.kodi
+21:00:30 T:140247702665664  NOTICE: special://temp/ is mapped to: /home/dan-laptop/.kodi/temp
+21:00:30 T:140247702665664  NOTICE: The executable running is: /usr/lib/x86_64-linux-gnu/kodi/kodi.bin
+21:00:30 T:140247702665664  NOTICE: Local hostname: dan-laptop-Dell-System-XPS-L321X
+21:00:30 T:140247702665664  NOTICE: Log File is located: /home/dan-laptop/.kodi/temp/kodi.log
+21:00:30 T:140247702665664  NOTICE: -----------------------------------------------------------------------
+21:00:31 T:140247702665664   ERROR: DBus: Error org.freedesktop.DBus.Error.InvalidArgs - No such property 'OnLowBattery'
+21:00:31 T:140247702665664   ERROR: DBus: Error org.freedesktop.DBus.Error.InvalidArgs - No such property 'CanSuspend'
+21:00:31 T:140247702665664   ERROR: DBus: Error org.freedesktop.DBus.Error.InvalidArgs - No such property 'CanHibernate'
+21:00:31 T:140247702665664  NOTICE: load settings...
+21:00:31 T:140247702665664  NOTICE: Found 1 Lists of Devices
+21:00:31 T:140247702665664  NOTICE: Enumerated PULSE devices:
+21:00:31 T:140247702665664  NOTICE:     Device 1
+21:00:31 T:140247702665664  NOTICE:         m_deviceName      : Default
+21:00:31 T:140247702665664  NOTICE:         m_displayName     : Default
+21:00:31 T:140247702665664  NOTICE:         m_displayNameExtra: Default Output Device (PULSEAUDIO)
+21:00:31 T:140247702665664  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+21:00:31 T:140247702665664  NOTICE:         m_channels        : FL,FR
+21:00:31 T:140247702665664  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+21:00:31 T:140247702665664  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+21:00:31 T:140247702665664  NOTICE:     Device 2
+21:00:31 T:140247702665664  NOTICE:         m_deviceName      : alsa_output.pci-0000_00_1b.0.analog-stereo
+21:00:31 T:140247702665664  NOTICE:         m_displayName     : Built-in Audio Analog Stereo
+21:00:31 T:140247702665664  NOTICE:         m_displayNameExtra: Speakers (PULSEAUDIO)
+21:00:31 T:140247702665664  NOTICE:         m_deviceType      : AE_DEVTYPE_PCM
+21:00:31 T:140247702665664  NOTICE:         m_channels        : FL,FR
+21:00:31 T:140247702665664  NOTICE:         m_sampleRates     : 5512,8000,11025,16000,22050,32000,44100,48000,64000,88200,96000,176400,192000,384000
+21:00:31 T:140247702665664  NOTICE:         m_dataFormats     : AE_FMT_U8,AE_FMT_S16NE,AE_FMT_S24NE3,AE_FMT_S24NE4,AE_FMT_S32NE,AE_FMT_FLOAT
+21:00:31 T:140247702665664  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
+21:00:31 T:140247702665664  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
+21:00:31 T:140247702665664  NOTICE: Default DVD Player: dvdplayer
+21:00:31 T:140247702665664  NOTICE: Default Video Player: dvdplayer
+21:00:31 T:140247702665664  NOTICE: Default Audio Player: paplayer
+21:00:31 T:140247702665664  NOTICE: Enabled debug logging due to GUI setting (2)
+21:00:31 T:140247702665664  NOTICE: Log level changed to "LOG_LEVEL_DEBUG_FREEMEM"
+21:00:31 T:140247702665664  NOTICE: CMediaSourceSettings: loading media sources from special://masterprofile/sources.xml
+21:00:31 T:140247702665664  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
+21:00:31 T:140247702665664   DEBUG: CPlayerCoreConfig::<ctor>: created player DVDPlayer for core 1
+21:00:31 T:140247702665664   DEBUG: CPlayerCoreConfig::<ctor>: created player oldmplayercore for core 1
+21:00:31 T:140247702665664   DEBUG: CPlayerCoreConfig::<ctor>: created player PAPlayer for core 3
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: system rules
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: hdhomerun/mms/udp
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: lastfm/shout
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: rtmp
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: rtsp
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: streams
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: aacp/sdp
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: mp2
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: dvd
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: dvdimage
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: sdp/asf
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: nsv
+21:00:31 T:140247702665664   DEBUG: CPlayerSelectionRule::Initialize: creating rule: radio
+21:00:31 T:140247702665664  NOTICE: Loaded playercorefactory configuration
+21:00:31 T:140247702665664  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
+21:00:31 T:140247702665664  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
+21:00:31 T:140247702665664    INFO: creating subdirectories
+21:00:31 T:140247702665664    INFO: userdata folder: special://masterprofile/
+21:00:31 T:140247702665664    INFO: recording folder:
+21:00:31 T:140247702665664    INFO: screenshots folder:
+21:00:31 T:140246961420032  NOTICE: Thread ActiveAE start, auto delete: false
+21:00:31 T:140247028532992  NOTICE: Thread AESink start, auto delete: false
+21:00:31 T:140247028532992    INFO: CActiveAESink::OpenSink - initialize sink
+21:00:31 T:140247028532992   DEBUG: CActiveAESink::OpenSink - trying to open device PULSE:Default
+21:00:31 T:140247028532992   DEBUG: PulseAudio: Context authorizing
+21:00:31 T:140247028532992   DEBUG: PulseAudio: Context setting name
+21:00:31 T:140247028532992   DEBUG: PulseAudio: Context ready
+21:00:31 T:140247028532992   DEBUG: PulseAudio: Stream ready
+21:00:31 T:140247028532992  NOTICE: PulseAudio: Opened device Default in pcm mode with Buffersize 150 ms
+21:00:31 T:140247028532992   DEBUG: CActiveAESink::OpenSink - PULSE Initialized:
+21:00:31 T:140247028532992   DEBUG:   Output Device : Default
+21:00:31 T:140247028532992   DEBUG:   Sample Rate   : 44100
+21:00:31 T:140247028532992   DEBUG:   Sample Format : AE_FMT_FLOAT
+21:00:31 T:140247028532992   DEBUG:   Channel Count : 2
+21:00:31 T:140247028532992   DEBUG:   Channel Layout: FL,FR
+21:00:31 T:140247028532992   DEBUG:   Frames        : 2205
+21:00:31 T:140247028532992   DEBUG:   Frame Samples : 4410
+21:00:31 T:140247028532992   DEBUG:   Frame Size    : 8
+21:00:31 T:140247702665664  NOTICE: Running database version Addons19
+21:00:31 T:140247702665664   DEBUG: SECTION:LoadDLL(special://xbmcbin/system/libcpluff-x86_64-linux.so)
+21:00:31 T:140247702665664   DEBUG: Loading: /usr/lib/x86_64-linux-gnu/kodi/system/libcpluff-x86_64-linux.so
+21:00:31 T:140247702665664    INFO: ADDON: cpluff: 'Could not read plug-in directory /usr/lib/x86_64-linux-gnu/kodi/addons: No such file or directory'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in repository.exodus has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.json has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.fanart.tv has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.audioencoder has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.fishbmc has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in kodi.audiodecoder has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in webinterface.default has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in repository.xbmc.org has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.six has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.vortex has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.xbmc.builtin.black has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in kodi.guilib has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.rsxs.euphoria has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.prosport has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in audioencoder.xbmc.builtin.wma has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.futures has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.projectm has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.singledispatch has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.simplejson has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.xbmc.builtin.dim has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.themoviedb.org has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.metadata has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.pbsnewshouryoutube has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in skin.confluence has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.myconnpy has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.addon.common has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.glspectrum has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in kodi.resource has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.beautifulsoup has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.pil has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.gui has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.common.plugin.cache has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.nbafullgames has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.musicvideos.theaudiodb.com has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.simple.downloader has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.core has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.youtube has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.rsxs.solarwinds has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.nba has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.pytz has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.exodus has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.requests has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.pvr has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.urlresolver has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.pbsnewshour has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.livestreamer has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in repo.natko1412 has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in audioencoder.xbmc.builtin.aac has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.album.universal has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.dateutil has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.htbackdrops.com has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in resource.language.en_gb has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.exodus.artwork has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.castaway has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.exodus.metadata has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.musicbrainz.org has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.allmusic.com has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.tvdb.com has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.local has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.webinterface has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in repository.icanuck has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in resource.uisounds.confluence has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.last.fm has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.themoviedb.org has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.parsedom has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.theaudiodb.com has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.artists.universal has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.python has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.imdb.com has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.liveresolver has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.waveform has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.addon has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.rsxs.plasma has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.codec has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.metahandler has been installed.'
+21:00:31 T:140247702665664   DEBUG: ADDON: cpluff: 'Not all directories were successfully scanned.'
+21:00:31 T:140247702665664  NOTICE: ADDONS: Using repository repository.exodus
+21:00:31 T:140247702665664  NOTICE: ADDONS: Using repository repository.xbmc.org
+21:00:31 T:140247702665664  NOTICE: ADDONS: Using repository repo.natko1412
+21:00:31 T:140247702665664  NOTICE: ADDONS: Using repository repository.icanuck
+21:00:31 T:140247009568512  NOTICE: Thread RemoteControl start, auto delete: false
+21:00:31 T:140247009568512    INFO: LIRC Process: using: /dev/lircd
+21:00:31 T:140247009568512    INFO: LIRC Connect: connect failed: No such file or directory
+21:00:31 T:140247009568512    INFO: CRemoteControl::Process - failed to connect to LIRC, will keep retrying every 5 seconds
+21:00:31 T:140247702665664    INFO: CKeyboardLayoutManager: loading keyboard layouts from special://xbmc/system/keyboardlayouts...
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Swedish QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Spanish QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Romanian QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Portuguese (Portugal) QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Hungarian QWERTZ" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "German QWERTZ" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Polish QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Danish QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Arabic QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Russian ЙЦУКЕН" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Russian АБВ" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Bulgarian ЯВЕРТЪ" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Bulgarian АБВ" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Ukrainian ЙЦУКЕН" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Ukrainian АБВ" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Turkish QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Lithuanian AZERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Lithuanian QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Hebrew QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Hebrew ABC" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "English QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "English AZERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "English ABC" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Norwegian QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: CKeyboardLayoutManager: keyboard layout "Greek QWERTY" successfully loaded
+21:00:31 T:140247702665664   DEBUG: UDisks: org.freedesktop.DBus.Error.ServiceUnknown - The name org.freedesktop.UDisks was not provided by any .service files
+21:00:31 T:140247702665664   DEBUG: DeviceKit.Disks: org.freedesktop.DBus.Error.ServiceUnknown - The name org.freedesktop.DeviceKit.Disks was not provided by any .service files
+21:00:31 T:140247702665664   DEBUG: Selected UDev as storage provider
+21:00:31 T:140247702665664  NOTICE: Setup SDL
+21:00:31 T:140247702665664    INFO: Available videomodes (xrandr):
+21:00:31 T:140247702665664    INFO: Output 'LVDS-1' has 29 modes
+21:00:31 T:140247702665664    INFO: ID:0x46 Name:1366x768 Refresh:60.004059 Width:1366 Height:768
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.004464
+21:00:31 T:140247702665664    INFO: ID:0x47 Name:1366x768 Refresh:40.002701 Width:1366 Height:768
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.004464
+21:00:31 T:140247702665664    INFO: ID:0x48 Name:1360x768 Refresh:59.798988 Width:1360 Height:768
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.008895
+21:00:31 T:140247702665664    INFO: ID:0x49 Name:1360x768 Refresh:59.960030 Width:1360 Height:768
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.008895
+21:00:31 T:140247702665664    INFO: ID:0x4a Name:1024x768 Refresh:120.074669 Width:1024 Height:768
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x4b Name:1024x768 Refresh:60.003841 Width:1024 Height:768
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x4c Name:960x720 Refresh:120.000000 Width:960 Height:720
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x4d Name:928x696 Refresh:120.101318 Width:928 Height:696
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x4e Name:896x672 Refresh:120.028877 Width:896 Height:672
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x4f Name:960x600 Refresh:119.997513 Width:960 Height:600
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.116616
+21:00:31 T:140247702665664    INFO: ID:0x50 Name:960x540 Refresh:119.975739 Width:960 Height:540
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.004954
+21:00:31 T:140247702665664    INFO: ID:0x51 Name:800x600 Refresh:120.000000 Width:800 Height:600
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x52 Name:800x600 Refresh:60.316540 Width:800 Height:600
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x53 Name:800x600 Refresh:56.250000 Width:800 Height:600
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x54 Name:840x525 Refresh:120.018707 Width:840 Height:525
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.116616
+21:00:31 T:140247702665664    INFO: ID:0x55 Name:840x525 Refresh:119.766510 Width:840 Height:525
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.116616
+21:00:31 T:140247702665664    INFO: ID:0x56 Name:800x512 Refresh:120.337013 Width:800 Height:512
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.143415
+21:00:31 T:140247702665664    INFO: ID:0x57 Name:700x525 Refresh:119.951233 Width:700 Height:525
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x58 Name:640x512 Refresh:120.039482 Width:640 Height:512
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.429268
+21:00:31 T:140247702665664    INFO: ID:0x59 Name:720x450 Refresh:119.774887 Width:720 Height:450
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.116616
+21:00:31 T:140247702665664    INFO: ID:0x5a Name:640x480 Refresh:120.000000 Width:640 Height:480
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x5b Name:640x480 Refresh:59.940479 Width:640 Height:480
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x5c Name:680x384 Refresh:119.597977 Width:680 Height:384
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.008895
+21:00:31 T:140247702665664    INFO: ID:0x5d Name:680x384 Refresh:119.920052 Width:680 Height:384
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.008895
+21:00:31 T:140247702665664    INFO: ID:0x5e Name:576x432 Refresh:120.128342 Width:576 Height:432
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x5f Name:512x384 Refresh:120.007683 Width:512 Height:384
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x60 Name:400x300 Refresh:120.633080 Width:400 Height:300
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x61 Name:400x300 Refresh:112.680290 Width:400 Height:300
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664    INFO: ID:0x62 Name:320x240 Refresh:120.104958 Width:320 Height:240
+21:00:31 T:140247702665664    INFO: Pixel Ratio: 1.339939
+21:00:31 T:140247702665664  NOTICE: Checking resolution 15
+21:00:31 T:140247702665664   DEBUG: Window Manager Name: KWin
+21:00:31 T:140247702665664   DEBUG: SECTION:LoadDLL(special://xbmcbin/system/ImageLib-x86_64-linux.so)
+21:00:31 T:140247702665664   DEBUG: Loading: /usr/lib/x86_64-linux-gnu/kodi/system/ImageLib-x86_64-linux.so
+21:00:31 T:140247702665664  NOTICE: Using visual 0x21
+21:00:31 T:140247702665664    INFO: GL: Maximum texture width: 8192
+21:00:31 T:140247702665664   DEBUG: GLX_EXTENSIONS: GLX_ARB_create_context GLX_ARB_create_context_profile GLX_ARB_create_context_robustness GLX_ARB_fbconfig_float GLX_ARB_framebuffer_sRGB GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_import_context GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_fbconfig_packed_float GLX_EXT_framebuffer_sRGB GLX_EXT_create_context_es2_profile GLX_EXT_create_context_es_profile GLX_MESA_copy_sub_buffer GLX_MESA_multithread_makecurrent GLX_MESA_query_renderer GLX_MESA_swap_control GLX_OML_swap_method GLX_OML_sync_control GLX_SGI_make_current_read GLX_SGI_swap_control GLX_SGI_video_sync GLX_SGIS_multisample GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGIX_visual_select_group GLX_EXT_texture_from_pixmap GLX_INTEL_swap_event GLX_EXT_buffer_age
+21:00:31 T:140247702665664  NOTICE: GL_VENDOR = Intel Open Source Technology Center
+21:00:31 T:140247702665664  NOTICE: GL_RENDERER = Mesa DRI Intel(R) Sandybridge Mobile
+21:00:31 T:140247702665664  NOTICE: GL_VERSION = 3.0 Mesa 12.0.6
+21:00:31 T:140247702665664  NOTICE: GL_SHADING_LANGUAGE_VERSION = 1.30
+21:00:31 T:140247702665664  NOTICE: GL_EXTENSIONS = GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_polygon_offset GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_3DFX_texture_compression_FXT1 GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_APPLE_packed_pixels GL_APPLE_vertex_array_object GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_APPLE_object_purgeable GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_texture_array GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_AMD_performance_monitor GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_draw_buffers_blend GL_AMD_seamless_cubemap_per_texture GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_NV_texture_barrier GL_ARB_get_program_binary GL_ARB_robustness GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_timer_query GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_compressed_texture_pixel_storage GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_texture_storage GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_transform_feedback GL_AMD_shader_trinary_minmax GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_clear_buffer_object GL_ARB_copy_image GL_ARB_explicit_uniform_location GL_ARB_invalidate_subdata GL_ARB_program_interface_query GL_ARB_texture_query_levels GL_ARB_texture_storage_multisample GL_ARB_vertex_attrib_binding GL_KHR_debug GL_KHR_robustness GL_ARB_buffer_storage GL_ARB_clear_texture GL_ARB_internalformat_query2 GL_ARB_multi_bind GL_ARB_seamless_cubemap_per_texture GL_ARB_shader_draw_parameters GL_ARB_texture_mirror_clamp_to_edge GL_ARB_vertex_type_10f_11f_11f_rev GL_EXT_shader_integer_mix GL_INTEL_performance_query GL_ARB_clip_control GL_ARB_conditional_render_inverted GL_ARB_cull_distance GL_ARB_get_texture_sub_image GL_ARB_pipeline_statistics_query GL_ARB_texture_barrier GL_EXT_polygon_offset_clamp GL_KHR_context_flush_control
+21:00:31 T:140247702665664    INFO: GL: Maximum texture width: 8192
+21:00:31 T:140247702665664   DEBUG: CRenderManager::UpdateDisplayLatency - Latency set to 0 msec
+21:00:31 T:140247702665664    INFO: load keymapping
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/appcommand.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/gamepad.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.Alienware.Dual.Compatible.Controller.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.AppleRemote.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.Harmony.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.Interact.AxisPad.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.Logitech.RumblePad.2.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.Microsoft.Xbox.360.Controller.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.Microsoft.Xbox.Controller.S.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.Nintendo.Wii.U.Pro.Controller.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.Ouya.Controller.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.PS3.Remote.Keyboard.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.PS4.Controller.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.Sony.PLAYSTATION(R)3.Controller.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/joystick.WiiRemote.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/keyboard.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/mouse.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/remote.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/keymaps/touchscreen.xml
+21:00:31 T:140247702665664    INFO: Loading special://xbmc/system/Lircmap.xml
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'mceusb'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'XboxDVDDongle'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'Microsoft_Xbox'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'PinnacleSysPCTVRemote'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'anysee'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'iMON-PAD'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'Antec_Veris_RM200'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'MCE_via_iMON'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'TwinHanRemote'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'linux-input-layer'
+21:00:31 T:140247702665664    INFO: * Linking remote mapping for 'linux-input-layer' to 'cx23885_remote'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'mediacenter'
+21:00:31 T:140247702665664    INFO: * Adding remote mapping for device 'devinput'
+21:00:31 T:140247702665664   DEBUG: CButtonTranslator::Load - no userdata Lircmap.xml found, skipping
+21:00:31 T:140247702665664    INFO: GUI format 1366x721, Display Windowed
+21:00:31 T:140247702665664   DEBUG: guilib: Fill viewport on change for solving rendering passes
+21:00:31 T:140247702665664    INFO: CLangInfo: loading resource.language.en_gb language information...
+21:00:31 T:140247702665664   DEBUG: trying to set locale to en_US.UTF-8
+21:00:31 T:140247702665664    INFO: global locale set to en_US.UTF-8
+21:00:31 T:140247702665664    INFO: CLangInfo: loading resource.language.en_gb language strings...
+21:00:31 T:140247702665664   DEBUG: POParser: loaded 3312 strings from file resource://resource.language.en_gb/strings.po
+21:00:31 T:140247702665664   DEBUG: LoadMappings - loaded node "Motorola Nyxboard Hybrid"
+21:00:31 T:140247702665664   DEBUG: LoadMappings - loaded node "CEC Adapter"
+21:00:31 T:140247702665664   DEBUG: LoadMappings - loaded node "Pulse-Eight CEC Adapter"
+21:00:31 T:140247702665664   DEBUG: LoadMappings - loaded node "iMON HID device"
+21:00:31 T:140247702665664   DEBUG: CPeripheralBusUSB - initialised udev monitor
+21:00:31 T:140247702665664   DEBUG: SECTION:LoadDLL(libcec.so.3)
+21:00:31 T:140247702665664   DEBUG: Loading: libcec.so.3
+21:00:31 T:140246578611968  NOTICE: Thread PeripBusCEC start, auto delete: false
+21:00:31 T:140246570219264  NOTICE: Thread PeripBusUSBUdev start, auto delete: false
+21:00:31 T:140247702665664   DEBUG: SECTION:LoadDLL(libcurl-gnutls.so.4)
+21:00:31 T:140247702665664   DEBUG: Loading: libcurl-gnutls.so.4
+21:00:31 T:140247702665664  NOTICE: Running database version Addons19
+21:00:31 T:140247702665664   DEBUG: Initialize, updating databases...
+21:00:31 T:140247702665664  NOTICE: Running database version ViewModes6
+21:00:31 T:140247702665664  NOTICE: Running database version Textures13
+21:00:31 T:140247702665664  NOTICE: Running database version MyMusic52
+21:00:31 T:140247702665664  NOTICE: Running database version MyVideos93
+21:00:31 T:140247702665664  NOTICE: Running database version TV29
+21:00:31 T:140247702665664  NOTICE: Running database version Epg10
+21:00:31 T:140247702665664   DEBUG: Initialize, updating databases... DONE
+21:00:31 T:140247702665664  NOTICE: start dvd mediatype detection
+21:00:31 T:140247702578944  NOTICE: Thread DetectDVDMedia start, auto delete: false
+21:00:31 T:140247702578944   DEBUG: Compiled with libcdio Version 0.83
+21:00:31 T:140247702665664   DEBUG: DPMS: supported power-saving modes: SUSPEND OFF STANDBY
+21:00:31 T:140247702578944   DEBUG: Thread DetectDVDMedia 140247702578944 terminating
+21:00:31 T:140247702665664   DEBUG: CAnnouncementManager - Announcement: OnClear from xbmc
+21:00:31 T:140247702665664   DEBUG: GOT ANNOUNCEMENT, type: 2, from xbmc, message OnClear
+21:00:31 T:140247702665664   DEBUG: Activating window ID: 12997
+21:00:31 T:140247702665664   DEBUG: ------ Window Init () ------
+21:00:31 T:140247702665664    INFO: load splash image: /usr/share/kodi/media/Splash.png
+21:00:31 T:140247702665664    INFO: Unloading old skin ...
+21:00:31 T:140247702665664    INFO:   load skin from: /usr/share/kodi/addons/skin.confluence (version: 2.7.4)
+21:00:31 T:140247702665664    INFO:   load fonts for skin...
+21:00:31 T:140247702665664    INFO: Loading fonts from /usr/share/kodi/addons/skin.confluence/720p/Font.xml
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font10(roboto-regular.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font12(roboto-regular.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font13(roboto-regular.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font14(roboto-regular.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font16(roboto-regular.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font30(roboto-regular.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: fontContextMenu(roboto-regular.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font10_title(roboto-bold.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font12_title(roboto-bold.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font13_title(roboto-bold.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font24_title(roboto-bold.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font28_title(roboto-bold.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font30_title(roboto-bold.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font35_title(roboto-bold.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: font_MainMenu(roboto-bold.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   ERROR: Couldn't load font name: WeatherTemp(roboto-bold.ttf), trying to substitute arial.ttf
+21:00:31 T:140247702665664   DEBUG: POParser: loaded 147 strings from file /usr/share/kodi/addons/skin.confluence/language/resource.language.en_gb/strings.po
+21:00:31 T:140247702665664    INFO: Loading skin includes from /usr/share/kodi/addons/skin.confluence/720p/includes.xml
+21:00:31 T:140247702665664    INFO:   load new skin...
+21:00:31 T:140247702665664    INFO: Loading user windows, path /usr/share/kodi/addons/skin.confluence/720p
+21:00:31 T:140247702665664   DEBUG: Load Skin XML: 1.49ms
+21:00:31 T:140247702665664    INFO:   initialize new skin...
+21:00:31 T:140247702665664   DEBUG: guilib: Fill viewport on change for solving rendering passes
+21:00:31 T:140247702665664    INFO: Loading skin file: Pointer.xml, load type: LOAD_ON_GUI_INIT
+21:00:31 T:140247702665664   DEBUG: OpenBundle - Opened bundle /usr/share/kodi/addons/skin.confluence/media/Textures.xbt
+21:00:31 T:140247702665664    INFO: Loading skin file: DialogVolumeBar.xml, load type: LOAD_ON_GUI_INIT
+21:00:31 T:140247702665664    INFO: Loading skin file: DialogKaiToast.xml, load type: LOAD_ON_GUI_INIT
+21:00:31 T:140247702665664    INFO: Loading skin file: DialogMuteBug.xml, load type: LOAD_ON_GUI_INIT
+21:00:31 T:140247702665664    INFO: Loading skin file: DialogSeekBar.xml, load type: LOAD_ON_GUI_INIT
+21:00:31 T:140247702665664    INFO: Loading skin file: DialogBusy.xml, load type: LOAD_ON_GUI_INIT
+21:00:31 T:140247702665664    INFO: Loading skin file: DialogExtendedProgressBar.xml, load type: LOAD_ON_GUI_INIT
+21:00:31 T:140247702665664    INFO: Loading resource://resource.uisounds.confluence/sounds.xml
+21:00:31 T:140247702665664    INFO:   skin loaded...
+21:00:31 T:140247702665664   DEBUG: Activating window ID: 12997
+21:00:31 T:140247702665664   DEBUG: ------ Window Init () ------
+21:00:31 T:140247702665664    INFO: load splash image: /usr/share/kodi/media/Splash.png
+21:00:31 T:140247702665664   DEBUG: JSONRPC: JSON schema type broadcastnext references an unknown type PVR.Details.Broadcast
+21:00:31 T:140247702665664 WARNING: JSONRPC: Could not parse type "PVR.Details.Channel"
+21:00:31 T:140247702665664    INFO: JSONRPC: Adding type "PVR.Details.Channel" to list of incomplete definitions (waiting for "PVR.Details.Broadcast")
+21:00:31 T:140247702665664   DEBUG: JSONRPC: JSON schema type  references an unknown type PVR.Details.Channel
+21:00:31 T:140247702665664   DEBUG: Invalid item definition in "items" for type channels
+21:00:31 T:140247702665664 WARNING: JSONRPC: Could not parse type "PVR.Details.ChannelGroup.Extended"
+21:00:31 T:140247702665664    INFO: JSONRPC: Adding type "PVR.Details.ChannelGroup.Extended" to list of incomplete definitions (waiting for "PVR.Details.Channel")
+21:00:31 T:140247702665664    INFO: JSONRPC: Resolving incomplete types/methods referencing PVR.Details.Broadcast
+21:00:31 T:140247702665664    INFO: JSONRPC: Resolving incomplete types/methods referencing PVR.Details.Channel
+21:00:31 T:140247702665664   DEBUG: JSONRPC: JSON schema type stereoscopicmode references an unknown type GUI.Stereoscopy.Mode
+21:00:31 T:140247702665664 WARNING: JSONRPC: Could not parse type "GUI.Property.Value"
+21:00:31 T:140247702665664    INFO: JSONRPC: Adding type "GUI.Property.Value" to list of incomplete definitions (waiting for "GUI.Stereoscopy.Mode")
+21:00:31 T:140247702665664    INFO: JSONRPC: Resolving incomplete types/methods referencing GUI.Stereoscopy.Mode
+21:00:31 T:140247702665664   DEBUG: JSONRPC: JSON schema type definition references an unknown type Setting.Details.Setting
+21:00:31 T:140247702665664 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
+21:00:31 T:140247702665664    INFO: JSONRPC: Adding type "Setting.Details.SettingList" to list of incomplete definitions (waiting for "Setting.Details.Setting")
+21:00:31 T:140247702665664    INFO: JSONRPC: Resolving incomplete types/methods referencing Setting.Details.Setting
+21:00:31 T:140247702665664    INFO: JSONRPC v6.25.2: Successfully initialized
+21:00:31 T:140247702665664   DEBUG: ADDON: Starting service addons.
+21:00:31 T:140246283015936  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:31 T:140246283015936    INFO: initializing python engine.
+21:00:31 T:140247702665664   DEBUG: Activating window ID: 12999
+21:00:31 T:140247702665664   DEBUG: ------ Window Init (Startup.xml) ------
+21:00:31 T:140247702665664    INFO: Loading skin file: Startup.xml, load type: LOAD_EVERY_TIME
+21:00:31 T:140247702665664    INFO: removing tempfiles
+21:00:31 T:140247702665664   DEBUG: ADDON: Starting service addons.
+21:00:31 T:140247702665664  NOTICE: initialize done
+21:00:31 T:140247702665664  NOTICE: Running the application...
+21:00:31 T:140247702665664   DEBUG: Activating window ID: 10000
+21:00:31 T:140246274623232  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:31 T:140246274623232    INFO: initializing python engine.
+21:00:31 T:140246266230528  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:31 T:140246266230528    INFO: initializing python engine.
+21:00:31 T:140247702665664   DEBUG: ------ Window Init () ------
+21:00:31 T:140247702665664   DEBUG: ------ Window Init (DialogMuteBug.xml) ------
+21:00:31 T:140247702665664   DEBUG: ------ Window Deinit (Startup.xml) ------
+21:00:31 T:140247702665664   DEBUG: ------ Window Init (Home.xml) ------
+21:00:31 T:140247702665664    INFO: Loading skin file: Home.xml, load type: KEEP_IN_MEMORY
+21:00:31 T:140246283015936   DEBUG: CPythonInvoker(0, /home/dan-laptop/.kodi/addons/script.module.simple.downloader/default.py): start processing
+21:00:31 T:140246274623232   DEBUG: CPythonInvoker(1, /home/dan-laptop/.kodi/addons/script.common.plugin.cache/default.py): start processing
+21:00:31 T:140246266230528   DEBUG: CPythonInvoker(2, /home/dan-laptop/.kodi/addons/plugin.video.youtube/startup.py): start processing
+21:00:31 T:140246100563712  NOTICE: Thread JobWorker start, auto delete: true
+21:00:31 T:140246100563712   DEBUG: CRecentlyAddedJob::UpdateMusic() - Running RecentlyAdded home screen update
+21:00:31 T:140246100563712   DEBUG: GetRecentlyAddedAlbumSongs() query: SELECT songview.* FROM (SELECT idAlbum FROM albumview ORDER BY idAlbum DESC LIMIT 10) AS recentalbums JOIN songview ON songview.idAlbum=recentalbums.idAlbum
+21:00:31 T:140246100563712   DEBUG: GetRecentlyAddedAlbums query: select * from albumview where strAlbum != '' order by idAlbum desc limit 10
+21:00:31 T:140246100563712   DEBUG: CRecentlyAddedJob::UpdateVideos() - Running RecentlyAdded home screen update
+21:00:31 T:140247702665664   DEBUG: no profile autoexec.py (/home/dan-laptop/.kodi/userdata/autoexec.py) found, skipping
+21:00:31 T:140247702665664   DEBUG: NetworkMessage - Starting network services
+21:00:31 T:140247702665664   DEBUG: CZeroconfAvahi::clientCallback: client is up and running
+21:00:31 T:140247702665664  NOTICE: starting zeroconf publishing
+21:00:31 T:140247702665664  NOTICE: starting upnp client
+21:00:31 T:140246083778304  NOTICE: Thread JobWorker start, auto delete: true
+21:00:31 T:140247702665664  NOTICE: ES: Starting event server
+21:00:31 T:140247702665664    INFO: JSONRPC Server: Successfully initialized
+21:00:31 T:140246083778304   DEBUG: CZeroconfAvahi::doPublishService identifier: servers.jsonrpc-tpc type: _xbmc-jsonrpc._tcp name:Kodi (dan-laptop-Dell-System-XPS-L321X) port:9090
+21:00:31 T:140246083778304   DEBUG: CZeroconfAvahi::addService() named: Kodi (dan-laptop-Dell-System-XPS-L321X) type: _xbmc-jsonrpc._tcp port:9090
+21:00:31 T:140246100563712   DEBUG: RunQuery took 1 ms for 0 items query: select * from movie_view  ORDER BY dateAdded desc, idMovie desc LIMIT 10
+21:00:31 T:140247702665664    INFO: GL: Maximum texture width: 8192
+21:00:31 T:140247702665664   DEBUG: CRenderManager::UpdateDisplayLatency - Latency set to 0 msec
+21:00:31 T:140246100563712   DEBUG: RunQuery took 1 ms for 0 items query: select * from episode_view  ORDER BY dateAdded desc, idEpisode desc LIMIT 10
+21:00:31 T:140246100563712   DEBUG: RunQuery took 0 ms for 0 items query: select * from musicvideo_view  ORDER BY dateAdded desc, idMVideo desc LIMIT 10
+21:00:31 T:140245773313792  NOTICE: Thread EventServer start, auto delete: false
+21:00:31 T:140245773313792  NOTICE: ES: Starting UDP Event server on 0.0.0.0:9777
+21:00:31 T:140245773313792  NOTICE: UDP: Listening on port 9777
+21:00:31 T:140246100563712   DEBUG: CRecentlyAddedJob::UpdateTotal() - Running RecentlyAdded home screen update
+21:00:31 T:140246083778304   DEBUG: CZeroconfAvahi::doPublishService identifier: servers.eventserver type: _xbmc-events._udp name:Kodi (dan-laptop-Dell-System-XPS-L321X) port:9777
+21:00:31 T:140246083778304   DEBUG: CZeroconfAvahi::addService() named: Kodi (dan-laptop-Dell-System-XPS-L321X) type: _xbmc-events._udp port:9777
+21:00:32 T:140245756528384  NOTICE: Thread JobWorker start, auto delete: true
+21:00:32 T:140245764921088  NOTICE: Thread TCPServer start, auto delete: false
+21:00:32 T:140246266230528  NOTICE: -->Python Interpreter Initialized<--
+21:00:32 T:140246266230528   DEBUG: CPythonInvoker(2, /home/dan-laptop/.kodi/addons/plugin.video.youtube/startup.py): the source file to load is "/home/dan-laptop/.kodi/addons/plugin.video.youtube/startup.py"
+21:00:32 T:140246274623232  NOTICE: -->Python Interpreter Initialized<--
+21:00:32 T:140246274623232   DEBUG: CPythonInvoker(1, /home/dan-laptop/.kodi/addons/script.common.plugin.cache/default.py): the source file to load is "/home/dan-laptop/.kodi/addons/script.common.plugin.cache/default.py"
+21:00:32 T:140246266230528   DEBUG: CPythonInvoker(2, /home/dan-laptop/.kodi/addons/plugin.video.youtube/startup.py): setting the Python path to /home/dan-laptop/.kodi/addons/plugin.video.youtube:/usr/lib/python2.7:/usr/lib/python2.7/plat-x86_64-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-old:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0
+21:00:32 T:140246266230528   DEBUG: CPythonInvoker(2, /home/dan-laptop/.kodi/addons/plugin.video.youtube/startup.py): entering source directory /home/dan-laptop/.kodi/addons/plugin.video.youtube
+21:00:32 T:140246266230528   DEBUG: CPythonInvoker(2, /home/dan-laptop/.kodi/addons/plugin.video.youtube/startup.py): instantiating addon using automatically obtained id of "plugin.video.youtube" dependent on version 2.19.0 of the xbmc.python api
+21:00:32 T:140246274623232   DEBUG: CPythonInvoker(1, /home/dan-laptop/.kodi/addons/script.common.plugin.cache/default.py): setting the Python path to /home/dan-laptop/.kodi/addons/script.common.plugin.cache:/usr/lib/python2.7:/usr/lib/python2.7/plat-x86_64-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-old:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0
+21:00:32 T:140246274623232   DEBUG: CPythonInvoker(1, /home/dan-laptop/.kodi/addons/script.common.plugin.cache/default.py): entering source directory /home/dan-laptop/.kodi/addons/script.common.plugin.cache
+21:00:32 T:140246283015936  NOTICE: -->Python Interpreter Initialized<--
+21:00:32 T:140246283015936   DEBUG: CPythonInvoker(0, /home/dan-laptop/.kodi/addons/script.module.simple.downloader/default.py): the source file to load is "/home/dan-laptop/.kodi/addons/script.module.simple.downloader/default.py"
+21:00:32 T:140246283015936   DEBUG: CPythonInvoker(0, /home/dan-laptop/.kodi/addons/script.module.simple.downloader/default.py): setting the Python path to /home/dan-laptop/.kodi/addons/script.module.simple.downloader:/home/dan-laptop/.kodi/addons/script.common.plugin.cache/lib:/home/dan-laptop/.kodi/addons/script.module.parsedom/lib:/usr/lib/python2.7:/usr/lib/python2.7/plat-x86_64-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-old:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0
+21:00:32 T:140246283015936   DEBUG: CPythonInvoker(0, /home/dan-laptop/.kodi/addons/script.module.simple.downloader/default.py): entering source directory /home/dan-laptop/.kodi/addons/script.module.simple.downloader
+21:00:32 T:140246274623232   DEBUG: CPythonInvoker(1, /home/dan-laptop/.kodi/addons/script.common.plugin.cache/default.py): instantiating addon using automatically obtained id of "script.common.plugin.cache" dependent on version 2.1.0 of the xbmc.python api
+21:00:32 T:140246283015936   DEBUG: CPythonInvoker(0, /home/dan-laptop/.kodi/addons/script.module.simple.downloader/default.py): instantiating addon using automatically obtained id of "script.module.simple.downloader" dependent on version 2.1.0 of the xbmc.python api
+21:00:32 T:140247702665664   DEBUG: LogindUPowerSyscall - Received unknown signal NameAcquired
+21:00:32 T:140246266230528   DEBUG: [plugin.video.youtube] YouTube settings startup initialization...
+21:00:32 T:140246283015936    INFO: CPythonInvoker(0, /home/dan-laptop/.kodi/addons/script.module.simple.downloader/default.py): script successfully run
+21:00:32 T:140246283015936    INFO: Python script stopped
+21:00:32 T:140246283015936   DEBUG: Thread LanguageInvoker 140246283015936 terminating
+21:00:32 T:140246266230528  NOTICE: [plugin.video.youtube] Startup: detected Isengard (Kodi-15.2), setting DASH_SUPPORT_BUILTIN = False, DASH_SUPPORT_ADDON = False
+21:00:32 T:140246266230528    INFO: CPythonInvoker(2, /home/dan-laptop/.kodi/addons/plugin.video.youtube/startup.py): script successfully run
+21:00:32 T:140246266230528    INFO: Python script stopped
+21:00:32 T:140246266230528   DEBUG: Thread LanguageInvoker 140246266230528 terminating
+21:00:32 T:140246274623232  NOTICE:  StorageServer Module loaded RUN
+21:00:32 T:140246274623232  NOTICE: StorageClient-2.5.4 Starting server
+21:00:32 T:140246092171008   DEBUG: CZeroconfAvahi::groupCallback: Service successfully established
+21:00:33 T:140247702665664   DEBUG: Previous line repeats 1 times.
+21:00:33 T:140247702665664   DEBUG: Keyboard: scancode: 0x72, sym: 0x0113, unicode: 0x0000, modifier: 0x0
+21:00:33 T:140247702665664   DEBUG: OnKey: right (0xf083) pressed, action is Right
+21:00:34 T:140247702665664   DEBUG: Keyboard: scancode: 0x72, sym: 0x0113, unicode: 0x0000, modifier: 0x0
+21:00:34 T:140247702665664   DEBUG: OnKey: right (0xf083) pressed, action is Right
+21:00:34 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:34 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:34 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:00:34 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:00:34 T:140247702665664   DEBUG: Activating window ID: 10004
+21:00:35 T:140247702665664   DEBUG: ------ Window Deinit (Home.xml) ------
+21:00:35 T:140247702665664   DEBUG: ------ Window Init (Settings.xml) ------
+21:00:35 T:140247702665664    INFO: Loading skin file: Settings.xml, load type: KEEP_IN_MEMORY
+21:00:35 T:140247702665664   DEBUG: Keyboard: scancode: 0x6f, sym: 0x0111, unicode: 0x0000, modifier: 0x0
+21:00:35 T:140247702665664   DEBUG: OnKey: up (0xf080) pressed, action is Up
+21:00:35 T:140247702665664   DEBUG: Keyboard: scancode: 0x6f, sym: 0x0111, unicode: 0x0000, modifier: 0x0
+21:00:35 T:140247702665664   DEBUG: OnKey: up (0xf080) pressed, action is Up
+21:00:36 T:140247702665664   DEBUG: Keyboard: scancode: 0x6f, sym: 0x0111, unicode: 0x0000, modifier: 0x0
+21:00:36 T:140247702665664   DEBUG: OnKey: up (0xf080) pressed, action is Up
+21:00:36 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:00:36 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:00:36 T:140247702665664   DEBUG: Activating window ID: 10040
+21:00:36 T:140247702665664   DEBUG: ------ Window Deinit (Settings.xml) ------
+21:00:36 T:140247702665664   DEBUG: ------ Window Init (AddonBrowser.xml) ------
+21:00:36 T:140247702665664    INFO: Loading skin file: AddonBrowser.xml, load type: KEEP_IN_MEMORY
+21:00:36 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory ()
+21:00:36 T:140247702665664   DEBUG:   ParentPath = []
+21:00:37 T:140245748135680  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:00:37 T:140245748135680   DEBUG: Thread BackgroundLoader 140245748135680 terminating
+21:00:37 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:37 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:38 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:38 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:38 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:00:38 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:00:38 T:140247702665664    INFO: Loading skin file: FileBrowser.xml, load type: KEEP_IN_MEMORY
+21:00:38 T:140247702665664   DEBUG: ------ Window Init (FileBrowser.xml) ------
+21:00:39 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:39 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:39 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:39 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:39 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:00:39 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:00:41 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:41 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:41 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:41 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:41 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:41 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:41 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:41 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:41 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:00:41 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:00:42 T:140247702665664   DEBUG: ------ Window Deinit (FileBrowser.xml) ------
+21:00:42 T:140247702665664   DEBUG: GetZipList - Processing zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/
+21:00:42 T:140246100563712   DEBUG: FileManager, processing folder: special://home/addons/plugin.video.pbsnewshour-master
+21:00:42 T:140246100563712   DEBUG:   -- special://home/addons/plugin.video.pbsnewshour-master/LICENSE.txt
+21:00:42 T:140246100563712   DEBUG:   -- special://home/addons/plugin.video.pbsnewshour-master/default.py
+21:00:42 T:140246100563712   DEBUG:   -- special://home/addons/plugin.video.pbsnewshour-master/addon.xml
+21:00:42 T:140246100563712   DEBUG:   -- special://home/addons/plugin.video.pbsnewshour-master/changelog.txt
+21:00:42 T:140246100563712   DEBUG:   -- special://home/addons/plugin.video.pbsnewshour-master/fanart.jpg
+21:00:42 T:140246100563712   DEBUG:   -- special://home/addons/plugin.video.pbsnewshour-master/icon.png
+21:00:42 T:140246100563712   DEBUG: FileManager, processing folder: zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/
+21:00:42 T:140246100563712   DEBUG: GetZipList - Processing zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/
+21:00:42 T:140246100563712   DEBUG: statdata: 1489284019 new: 1489284019
+21:00:42 T:140246100563712   DEBUG:   -- zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/LICENSE.txt
+21:00:42 T:140246100563712   DEBUG:   -- zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/addon.xml
+21:00:42 T:140246100563712   DEBUG:   -- zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/changelog.txt
+21:00:42 T:140246100563712   DEBUG:   -- zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/default.py
+21:00:42 T:140246100563712   DEBUG:   -- zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/fanart.jpg
+21:00:42 T:140246100563712   DEBUG:   -- zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/icon.png
+21:00:42 T:140246100563712   DEBUG: FileManager: create folder special://home/addons/plugin.video.pbsnewshour-master
+21:00:42 T:140246100563712   DEBUG: FileManager: delete special://home/addons/plugin.video.pbsnewshour-master/LICENSE.txt
+21:00:42 T:140246100563712   DEBUG: FileManager: delete special://home/addons/plugin.video.pbsnewshour-master/default.py
+21:00:42 T:140246100563712   DEBUG: FileManager: delete special://home/addons/plugin.video.pbsnewshour-master/addon.xml
+21:00:42 T:140246100563712   DEBUG: FileManager: delete special://home/addons/plugin.video.pbsnewshour-master/changelog.txt
+21:00:42 T:140246100563712   DEBUG: FileManager: delete special://home/addons/plugin.video.pbsnewshour-master/fanart.jpg
+21:00:42 T:140246100563712   DEBUG: FileManager: delete special://home/addons/plugin.video.pbsnewshour-master/icon.png
+21:00:42 T:140246100563712   DEBUG: FileManager: copy zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/LICENSE.txt -> special://home/addons/plugin.video.pbsnewshour-master/LICENSE.txt
+21:00:42 T:140246100563712   DEBUG: FileManager: copy zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/addon.xml -> special://home/addons/plugin.video.pbsnewshour-master/addon.xml
+21:00:42 T:140246100563712   DEBUG: FileManager: copy zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/changelog.txt -> special://home/addons/plugin.video.pbsnewshour-master/changelog.txt
+21:00:42 T:140246100563712   DEBUG: FileManager: copy zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/default.py -> special://home/addons/plugin.video.pbsnewshour-master/default.py
+21:00:42 T:140246100563712   DEBUG: FileManager: copy zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/fanart.jpg -> special://home/addons/plugin.video.pbsnewshour-master/fanart.jpg
+21:00:42 T:140246100563712   DEBUG: FileManager: copy zip://%2fhome%2fdan-laptop%2fgithub%2fKodi_addons%2fplugin.video.pbsnewshour-master.zip/plugin.video.pbsnewshour-master/icon.png -> special://home/addons/plugin.video.pbsnewshour-master/icon.png
+21:00:42 T:140246100563712    INFO: ADDON: cpluff: 'Could not read plug-in directory /usr/lib/x86_64-linux-gnu/kodi/addons: No such file or directory'
+21:00:42 T:140246100563712   DEBUG: ADDON: cpluff: 'Not all directories were successfully scanned.'
+21:00:42 T:140247702665664   DEBUG: ------ Window Init (DialogKaiToast.xml) ------
+21:00:42 T:140246100563712    INFO: ADDON: cpluff: 'Could not read plug-in directory /usr/lib/x86_64-linux-gnu/kodi/addons: No such file or directory'
+21:00:42 T:140246100563712   DEBUG: ADDON: cpluff: 'Not all directories were successfully scanned.'
+21:00:42 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory ()
+21:00:42 T:140247702665664   DEBUG:   ParentPath = []
+21:00:42 T:140245748135680  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:00:42 T:140245748135680   DEBUG: Thread BackgroundLoader 140245748135680 terminating
+21:00:43 T:140247702665664   DEBUG: Keyboard: scancode: 0x09, sym: 0x001b, unicode: 0x001b, modifier: 0x0
+21:00:43 T:140247702665664   DEBUG: OnKey: escape (0xf01b) pressed, action is PreviousMenu
+21:00:43 T:140247702665664   DEBUG: CGUIWindowManager::PreviousWindow: Deactivate
+21:00:43 T:140247702665664   DEBUG: ------ Window Deinit (AddonBrowser.xml) ------
+21:00:43 T:140247702665664   DEBUG: CGUIWindowManager::PreviousWindow: Activate new
+21:00:43 T:140247702665664   DEBUG: ------ Window Init (Settings.xml) ------
+21:00:43 T:140247702665664   DEBUG: Keyboard: scancode: 0x09, sym: 0x001b, unicode: 0x001b, modifier: 0x0
+21:00:43 T:140247702665664   DEBUG: OnKey: escape (0xf01b) pressed, action is PreviousMenu
+21:00:43 T:140247702665664   DEBUG: CGUIWindowManager::PreviousWindow: Deactivate
+21:00:43 T:140247702665664   DEBUG: ------ Window Deinit (Settings.xml) ------
+21:00:43 T:140247702665664   DEBUG: CGUIWindowManager::PreviousWindow: Activate new
+21:00:43 T:140247702665664   DEBUG: ------ Window Init (Home.xml) ------
+21:00:44 T:140247702665664   DEBUG: Keyboard: scancode: 0x09, sym: 0x001b, unicode: 0x001b, modifier: 0x0
+21:00:44 T:140247702665664   DEBUG: OnKey: escape (0xf01b) pressed, action is PreviousMenu
+21:00:44 T:140247702665664   DEBUG: CGUIWindowManager::PreviousWindow: Deactivate
+21:00:44 T:140247702665664   ERROR: Unable to activate the previous window
+21:00:44 T:140247702665664   DEBUG: Activating window ID: 10000
+21:00:44 T:140247702665664   DEBUG: ------ Window Init (Home.xml) ------
+21:00:44 T:140247702665664   DEBUG: Keyboard: scancode: 0x09, sym: 0x001b, unicode: 0x001b, modifier: 0x0
+21:00:44 T:140247702665664   DEBUG: OnKey: escape (0xf01b) pressed, action is PreviousMenu
+21:00:44 T:140247702665664   DEBUG: CGUIWindowManager::PreviousWindow: Deactivate
+21:00:46 T:140247702665664   DEBUG: Keyboard: scancode: 0x71, sym: 0x0114, unicode: 0x0000, modifier: 0x0
+21:00:46 T:140247702665664   DEBUG: OnKey: left (0xf082) pressed, action is Left
+21:00:47 T:140247702665664   DEBUG: Keyboard: scancode: 0x71, sym: 0x0114, unicode: 0x0000, modifier: 0x0
+21:00:47 T:140247702665664   DEBUG: OnKey: left (0xf082) pressed, action is Left
+21:00:47 T:140247702665664   DEBUG: Keyboard: scancode: 0x71, sym: 0x0114, unicode: 0x0000, modifier: 0x0
+21:00:47 T:140247702665664   DEBUG: OnKey: left (0xf082) pressed, action is Left
+21:00:47 T:140245748135680  NOTICE: Thread JobWorker start, auto delete: true
+21:00:47 T:140247702665664   DEBUG: ------ Window Deinit (DialogKaiToast.xml) ------
+21:00:48 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:48 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:48 T:140247702665664   DEBUG: Keyboard: scancode: 0x72, sym: 0x0113, unicode: 0x0000, modifier: 0x0
+21:00:48 T:140247702665664   DEBUG: OnKey: right (0xf083) pressed, action is Right
+21:00:48 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:00:48 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:00:48 T:140247702665664   DEBUG: Activating window ID: 10025
+21:00:49 T:140247702665664   DEBUG: ------ Window Deinit (Home.xml) ------
+21:00:49 T:140247702665664   DEBUG: ------ Window Init (MyVideoNav.xml) ------
+21:00:49 T:140247702665664    INFO: Loading skin file: MyVideoNav.xml, load type: KEEP_IN_MEMORY
+21:00:49 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory (addons://sources/video/)
+21:00:49 T:140247702665664   DEBUG:   ParentPath = [addons://sources/video/]
+21:00:49 T:140245429376768  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:00:49 T:140245429376768   DEBUG: Thread BackgroundLoader 140245429376768 terminating
+21:00:49 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:49 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:50 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:50 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:50 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:50 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:50 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:50 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:50 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:50 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:51 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:00:51 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:00:51 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory (plugin://plugin.video.pbsnewshour/)
+21:00:51 T:140247702665664   DEBUG:   ParentPath = [addons://sources/video]
+21:00:51 T:140246100563712   DEBUG: StartScript - calling plugin PBS Newshour('plugin://plugin.video.pbsnewshour/','1','')
+21:00:51 T:140246100563712   DEBUG: WaitOnScriptResult - waiting on the PBS Newshour (id=3) plugin...
+21:00:51 T:140245429376768  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:51 T:140245429376768    INFO: initializing python engine.
+21:00:51 T:140245429376768   DEBUG: CPythonInvoker(3, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): start processing
+21:00:51 T:140245429376768  NOTICE: -->Python Interpreter Initialized<--
+21:00:51 T:140245429376768   DEBUG: CPythonInvoker(3, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): the source file to load is "/home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py"
+21:00:51 T:140245429376768   DEBUG: CPythonInvoker(3, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): setting the Python path to /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master:/home/dan-laptop/.kodi/addons/script.module.addon.common/lib:/usr/lib/python2.7:/usr/lib/python2.7/plat-x86_64-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-old:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0
+21:00:51 T:140245429376768   DEBUG: CPythonInvoker(3, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): entering source directory /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master
+21:00:51 T:140245429376768   DEBUG: CPythonInvoker(3, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): instantiating addon using automatically obtained id of "plugin.video.pbsnewshour" dependent on version 2.14.0 of the xbmc.python api
+21:00:51 T:140247702665664   DEBUG: ------ Window Init (DialogBusy.xml) ------
+21:00:51 T:140245429376768  NOTICE: http://www.pbs.org/newshour/videos/
+21:00:53 T:140245429376768    INFO: CPythonInvoker(3, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): script successfully run
+21:00:53 T:140246100563712   DEBUG: WaitOnScriptResult- plugin returned successfully
+21:00:53 T:140247702665664   DEBUG: Saving fileitems [plugin://plugin.video.pbsnewshour/]
+21:00:53 T:140247702665664   DEBUG:   -- items: 6, sort method: 0, ascending: false
+21:00:53 T:140245446162176  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:00:53 T:140245446162176   DEBUG: Thread BackgroundLoader 140245446162176 terminating
+21:00:53 T:140245429376768    INFO: Python script stopped
+21:00:53 T:140245429376768   DEBUG: Thread LanguageInvoker 140245429376768 terminating
+21:00:54 T:140247702665664   DEBUG: ------ Window Deinit (DialogBusy.xml) ------
+21:00:56 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:00:56 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:00:57 T:140247702665664   DEBUG: Keyboard: scancode: 0x6f, sym: 0x0111, unicode: 0x0000, modifier: 0x0
+21:00:57 T:140247702665664   DEBUG: OnKey: up (0xf080) pressed, action is Up
+21:00:57 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:00:57 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:00:57 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory (addons://sources/video)
+21:00:57 T:140247702665664   DEBUG:   ParentPath = [addons://sources/]
+21:00:57 T:140245429376768  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:00:57 T:140245429376768   DEBUG: Thread BackgroundLoader 140245429376768 terminating
+21:00:59 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:00:59 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:00:59 T:140247702665664   DEBUG: Clearing cached fileitems [plugin://plugin.video.pbsnewshour/]
+21:00:59 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory (plugin://plugin.video.pbsnewshour/)
+21:00:59 T:140247702665664   DEBUG:   ParentPath = [addons://sources/video]
+21:00:59 T:140246083778304   DEBUG: StartScript - calling plugin PBS Newshour('plugin://plugin.video.pbsnewshour/','2','')
+21:00:59 T:140246083778304   DEBUG: WaitOnScriptResult - waiting on the PBS Newshour (id=4) plugin...
+21:00:59 T:140245429376768  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:00:59 T:140245429376768    INFO: initializing python engine.
+21:00:59 T:140245429376768   DEBUG: CPythonInvoker(4, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): start processing
+21:00:59 T:140245429376768  NOTICE: -->Python Interpreter Initialized<--
+21:00:59 T:140245429376768   DEBUG: CPythonInvoker(4, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): the source file to load is "/home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py"
+21:00:59 T:140245429376768   DEBUG: CPythonInvoker(4, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): setting the Python path to /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master:/home/dan-laptop/.kodi/addons/script.module.addon.common/lib:/usr/lib/python2.7:/usr/lib/python2.7/plat-x86_64-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-old:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0
+21:00:59 T:140245429376768   DEBUG: CPythonInvoker(4, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): entering source directory /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master
+21:00:59 T:140245429376768   DEBUG: CPythonInvoker(4, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py): instantiating addon using automatically obtained id of "plugin.video.pbsnewshour" dependent on version 2.14.0 of the xbmc.python api
+21:00:59 T:140245429376768  NOTICE: http://www.pbs.org/newshour/videos/
+21:00:59 T:140245429376768   ERROR: Exception
+21:00:59 T:140245429376768   ERROR: TypeError
+21:00:59 T:140245429376768   ERROR: :
+21:00:59 T:140245429376768   ERROR: "'NoneType' object is not callable"
+21:00:59 T:140245429376768   ERROR:  in
+21:00:59 T:140245429376768   ERROR: 'lxml.etree._ExceptionContext._store_raised'
+21:00:59 T:140245429376768   ERROR:  ignored
+21:00:59 T:140245429376768   ERROR: EXCEPTION Thrown (PythonToCppException) : -->Python callback/script returned the following error<--
+                                             - NOTE: IGNORING THIS CAN LEAD TO MEMORY LEAKS!
+                                            Error Type: <type 'exceptions.IndexError'>
+                                            Error Contents: list index out of range
+                                            Traceback (most recent call last):
+                                              File "/home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py", line 128, in <module>
+                                                router()
+                                              File "/home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py", line 124, in router
+                                                list_videos()
+                                              File "/home/dan-laptop/.kodi/addons/plugin.video.pbsnewshour-master/default.py", line 85, in list_videos
+                                                videos = soup.findAll('ul',attrs={'class': 'sidebar-popular-list'})[0].findAll('a') #make a list of all the links
+                                            IndexError: list index out of range
+                                            -->End of Python script error report<--
+21:00:59 T:140245429376768    INFO: Python script stopped
+21:00:59 T:140245429376768   DEBUG: Thread LanguageInvoker 140245429376768 terminating
+21:00:59 T:140246083778304   DEBUG:  WaitOnScriptResult - plugin exited prematurely - terminating
+21:00:59 T:140247702665664   ERROR: GetDirectory - Error getting plugin://plugin.video.pbsnewshour/
+21:00:59 T:140247702665664   ERROR: CGUIMediaWindow::GetDirectory(plugin://plugin.video.pbsnewshour/) failed
+21:00:59 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory (addons://sources/video)
+21:00:59 T:140247702665664   DEBUG:   ParentPath = [addons://sources/]
+21:00:59 T:140245429376768  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:00:59 T:140245429376768   DEBUG: Thread BackgroundLoader 140245429376768 terminating
+21:00:59 T:140247702665664   DEBUG: ------ Window Init (DialogKaiToast.xml) ------
+21:01:01 T:140247702665664   DEBUG: ------ Window Init (Pointer.xml) ------
+21:01:01 T:140247702665664   DEBUG: ------ Window Deinit (Pointer.xml) ------
+21:01:03 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:01:03 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:01:03 T:140247702665664   DEBUG: Keyboard: scancode: 0x74, sym: 0x0112, unicode: 0x0000, modifier: 0x0
+21:01:03 T:140247702665664   DEBUG: OnKey: down (0xf081) pressed, action is Down
+21:01:04 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:01:04 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:01:04 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory (plugin://plugin.video.pbsnewshouryoutube/)
+21:01:04 T:140247702665664   DEBUG:   ParentPath = [addons://sources/video]
+21:01:04 T:140245756528384   DEBUG: StartScript - calling plugin PBS Newshour - Youtube('plugin://plugin.video.pbsnewshouryoutube/','3','')
+21:01:04 T:140245756528384   DEBUG: WaitOnScriptResult - waiting on the PBS Newshour - Youtube (id=5) plugin...
+21:01:04 T:140245429376768  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:01:04 T:140245429376768    INFO: initializing python engine.
+21:01:04 T:140245429376768   DEBUG: CPythonInvoker(5, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): start processing
+21:01:04 T:140245429376768  NOTICE: -->Python Interpreter Initialized<--
+21:01:04 T:140245429376768   DEBUG: CPythonInvoker(5, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): the source file to load is "/home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py"
+21:01:04 T:140245429376768   DEBUG: CPythonInvoker(5, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): setting the Python path to /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master:/home/dan-laptop/.kodi/addons/script.module.addon.common/lib:/usr/lib/python2.7:/usr/lib/python2.7/plat-x86_64-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-old:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0
+21:01:04 T:140245429376768   DEBUG: CPythonInvoker(5, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): entering source directory /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master
+21:01:04 T:140245429376768   DEBUG: CPythonInvoker(5, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): instantiating addon using automatically obtained id of "plugin.video.pbsnewshouryoutube" dependent on version 2.14.0 of the xbmc.python api
+21:01:04 T:140245429376768  NOTICE: pbsnewshouryoutube.run
+21:01:04 T:140245429376768  NOTICE: pbsnewshouryoutube.main_list {}
+21:01:04 T:140245429376768    INFO: CPythonInvoker(5, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): script successfully run
+21:01:04 T:140245756528384   DEBUG: WaitOnScriptResult- plugin returned successfully
+21:01:04 T:140245446162176  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:01:04 T:140245446162176   DEBUG: Thread BackgroundLoader 140245446162176 terminating
+21:01:04 T:140245429376768    INFO: Python script stopped
+21:01:04 T:140245429376768   DEBUG: Thread LanguageInvoker 140245429376768 terminating
+21:01:04 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:01:04 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:01:04 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory (addons://sources/video)
+21:01:04 T:140247702665664   DEBUG:   ParentPath = [addons://sources/]
+21:01:04 T:140245429376768  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:01:04 T:140245429376768   DEBUG: Thread BackgroundLoader 140245429376768 terminating
+21:01:05 T:140247702665664   DEBUG: ------ Window Deinit (DialogKaiToast.xml) ------
+21:01:05 T:140247702665664   DEBUG: Keyboard: scancode: 0x24, sym: 0x000d, unicode: 0x000d, modifier: 0x0
+21:01:05 T:140247702665664   DEBUG: OnKey: return (0xf00d) pressed, action is Select
+21:01:05 T:140247702665664   DEBUG: CGUIMediaWindow::GetDirectory (plugin://plugin.video.pbsnewshouryoutube/)
+21:01:05 T:140247702665664   DEBUG:   ParentPath = [addons://sources/video]
+21:01:05 T:140246083778304   DEBUG: StartScript - calling plugin PBS Newshour - Youtube('plugin://plugin.video.pbsnewshouryoutube/','4','')
+21:01:05 T:140246083778304   DEBUG: WaitOnScriptResult - waiting on the PBS Newshour - Youtube (id=6) plugin...
+21:01:05 T:140245429376768  NOTICE: Thread LanguageInvoker start, auto delete: false
+21:01:05 T:140245429376768    INFO: initializing python engine.
+21:01:05 T:140245429376768   DEBUG: CPythonInvoker(6, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): start processing
+21:01:05 T:140245429376768  NOTICE: -->Python Interpreter Initialized<--
+21:01:05 T:140245429376768   DEBUG: CPythonInvoker(6, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): the source file to load is "/home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py"
+21:01:05 T:140245429376768   DEBUG: CPythonInvoker(6, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): setting the Python path to /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master:/home/dan-laptop/.kodi/addons/script.module.addon.common/lib:/usr/lib/python2.7:/usr/lib/python2.7/plat-x86_64-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-old:/usr/lib/python2.7/lib-dynload:/usr/local/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages:/usr/lib/python2.7/dist-packages/PILcompat:/usr/lib/python2.7/dist-packages/gtk-2.0
+21:01:05 T:140245429376768   DEBUG: CPythonInvoker(6, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): entering source directory /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master
+21:01:05 T:140245429376768   DEBUG: CPythonInvoker(6, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): instantiating addon using automatically obtained id of "plugin.video.pbsnewshouryoutube" dependent on version 2.14.0 of the xbmc.python api
+21:01:05 T:140245429376768  NOTICE: pbsnewshouryoutube.run
+21:01:05 T:140245429376768  NOTICE: pbsnewshouryoutube.main_list {}
+21:01:05 T:140245429376768    INFO: CPythonInvoker(6, /home/dan-laptop/.kodi/addons/plugin.video.pbsnewshouryoutube-master/default.py): script successfully run
+21:01:05 T:140246083778304   DEBUG: WaitOnScriptResult- plugin returned successfully
+21:01:05 T:140245446162176  NOTICE: Thread BackgroundLoader start, auto delete: false
+21:01:05 T:140245446162176   DEBUG: Thread BackgroundLoader 140245446162176 terminating
+21:01:05 T:140245429376768    INFO: Python script stopped
+21:01:05 T:140245429376768   DEBUG: Thread LanguageInvoker 140245429376768 terminating
+21:01:07 T:140247702665664   DEBUG: CAnnouncementManager - Announcement: OnQuit from xbmc
+21:01:07 T:140247702665664   DEBUG: GOT ANNOUNCEMENT, type: 8, from xbmc, message OnQuit
+21:01:07 T:140247702665664  NOTICE: Storing total System Uptime
+21:01:07 T:140247702665664  NOTICE: Saving settings
+21:01:07 T:140247702665664  NOTICE: stop all
+21:01:07 T:140246100563712   DEBUG: Thread JobWorker 140246100563712 terminating (autodelete)
+21:01:07 T:140245748135680   DEBUG: Thread JobWorker 140245748135680 terminating (autodelete)
+21:01:07 T:140247702665664  NOTICE: stop player
+21:01:07 T:140247702665664    INFO: stopping PVRManager
+21:01:07 T:140245756528384   DEBUG: Thread JobWorker 140245756528384 terminating (autodelete)
+21:01:07 T:140246083778304   DEBUG: Thread JobWorker 140246083778304 terminating (autodelete)
+21:01:07 T:140247702665664   DEBUG: NetworkMessage - Signaling network services to stop
+21:01:07 T:140247702665664  NOTICE: ES: Stopping event server
+21:01:07 T:140247702665664   DEBUG: NetworkMessage - Waiting for network services to stop
+21:01:07 T:140247702665664  NOTICE: stopping upnp
+21:01:07 T:140247702665664  NOTICE: stopping zeroconf publishing
+21:01:08 T:140245773313792  NOTICE: ES: UDP Event server stopped
+21:01:08 T:140245773313792   DEBUG: Thread EventServer 140245773313792 terminating
+21:01:08 T:140245764921088   DEBUG: Thread TCPServer 140245764921088 terminating
+21:01:08 T:140247702665664  NOTICE: stop dvd detect media
+21:01:08 T:140246570219264   DEBUG: Thread PeripBusUSBUdev 140246570219264 terminating
+21:01:08 T:140247702665664  NOTICE: stop sap announcement listener
+21:01:08 T:140247702665664  NOTICE: clean cached files!
+21:01:08 T:140247702665664  NOTICE: unload skin
+21:01:08 T:140247702665664    INFO: Unloading old skin ...
+21:01:08 T:140246578611968   DEBUG: Thread PeripBusCEC 140246578611968 terminating
+21:01:08 T:140247702665664   DEBUG: ------ Window Deinit () ------
+21:01:08 T:140247702665664   DEBUG: ------ Window Deinit (MyVideoNav.xml) ------
+21:01:08 T:140247702665664   DEBUG: ------ Window Deinit (DialogMuteBug.xml) ------
+21:01:08 T:140247702665664   DEBUG: Cleanup - Closed bundle
+21:01:08 T:140247702665664   DEBUG: ADDON: Stopping service addons.
+21:01:08 T:140246274623232  NOTICE: StorageServer-2.5.4 Closed down
+21:01:08 T:140246274623232    INFO: CPythonInvoker(1, /home/dan-laptop/.kodi/addons/script.common.plugin.cache/default.py): script successfully run
+21:01:08 T:140247702665664   DEBUG: CPythonInvoker(1, /home/dan-laptop/.kodi/addons/script.common.plugin.cache/default.py): script termination took 421ms
+21:01:08 T:140246274623232    INFO: Python script interrupted by user
+21:01:08 T:140246274623232   DEBUG: Thread LanguageInvoker 140246274623232 terminating
+21:01:08 T:140246961420032   DEBUG: Thread ActiveAE 140246961420032 terminating
+21:01:08 T:140247028532992   DEBUG: Thread AESink 140247028532992 terminating
+21:01:09 T:140247702665664  NOTICE: stopped
+21:01:09 T:140247702665664  NOTICE: destroy
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in repository.exodus has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.json has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.fanart.tv has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.audioencoder has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.six has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in repository.xbmc.org has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in webinterface.default has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in kodi.audiodecoder has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.fishbmc has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.prosport has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.rsxs.euphoria has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in kodi.guilib has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.xbmc.builtin.black has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.vortex has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.futures has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in audioencoder.xbmc.builtin.wma has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.projectm has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.simplejson has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.singledispatch has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.xbmc.builtin.dim has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.themoviedb.org has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.metadata has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.pbsnewshouryoutube has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.addon.common has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.myconnpy has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in skin.confluence has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.beautifulsoup has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in kodi.resource has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.glspectrum has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.common.plugin.cache has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.gui has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.pil has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.nbafullgames has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.simple.downloader has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.musicvideos.theaudiodb.com has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.core has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.youtube has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.requests has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.exodus has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.pytz has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.nba has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.rsxs.solarwinds has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.pbsnewshour has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.urlresolver has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.pvr has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.livestreamer has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in repo.natko1412 has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.album.universal has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in audioencoder.xbmc.builtin.aac has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.htbackdrops.com has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.dateutil has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in plugin.video.castaway has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.exodus.artwork has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in resource.language.en_gb has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.tvdb.com has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.allmusic.com has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.musicbrainz.org has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.exodus.metadata has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.local has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in repository.icanuck has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.webinterface has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.last.fm has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in resource.uisounds.confluence has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.themoviedb.org has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.artists.universal has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.theaudiodb.com has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.parsedom has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in metadata.common.imdb.com has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.python has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.liveresolver has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in screensaver.rsxs.plasma has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.addon has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in visualization.waveform has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in xbmc.codec has been uninstalled.'
+21:01:09 T:140247702665664   DEBUG: ADDON: cpluff: 'Plug-in script.module.metahandler has been uninstalled.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c04e080 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c076b00 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c0ca580 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c14b300 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x251a280 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x252b480 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x2585500 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x25b4380 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c01e290 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c11e790 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c186110 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x252b010 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c0b0da0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x25428a0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c14abb0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c080fb0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x25b8630 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c114b40 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c01e5c0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c14a3c0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c09c4c0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c11af40 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c03d2d0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c1141d0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c0b89d0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c0e8ad0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c0a3450 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x24b3cd0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x2585350 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c04d460 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c15a060 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c0e55e0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c14b3e0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c1340e0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x247fd60 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x252bb60 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x25ab8e0 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x7f8d8c00df70 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664    INFO: ADDON: cpluff: 'An unreleased information object was encountered at address 0x2585270 with reference count 1 when destroying the associated plug-in context. Not releasing the object.'
+21:01:09 T:140247702665664  NOTICE: closing down remote control service
+21:01:09 T:140247009568512   DEBUG: Failed to connect to LIRC. Giving up.
+21:01:09 T:140247009568512   DEBUG: Thread RemoteControl 140247009568512 terminating
+21:01:09 T:140247702665664    INFO: LIRC SetEnabled: disabled
+21:01:09 T:140247702665664  NOTICE: unload sections
+21:01:09 T:140247702665664  NOTICE: special://profile/ is mapped to: special://masterprofile/
+21:01:09 T:140247702665664   DEBUG: object 0 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 1 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 2 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 3 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 4 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 5 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 6 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 7 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 8 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 9 --> 0 instances
+21:01:09 T:140247702665664  NOTICE: destroy
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10013 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10014 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10015 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10016 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10017 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10018 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10019 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10021 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10107 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10115 from the window manager when it didn't exist
+21:01:09 T:140247702665664 WARNING: Attempted to remove window 10104 from the window manager when it didn't exist
+21:01:09 T:140247702665664  NOTICE: closing down remote control service
+21:01:09 T:140247702665664    INFO: LIRC SetEnabled: disabled
+21:01:09 T:140247702665664  NOTICE: unload sections
+21:01:09 T:140247702665664   DEBUG: object 0 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 1 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 2 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 3 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 4 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 5 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 6 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 7 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 8 --> 0 instances
+21:01:09 T:140247702665664   DEBUG: object 9 --> 0 instances
+21:01:09 T:140247702665664  NOTICE: application stopped...
+21:01:09 T:140247702665664   DEBUG: PVRManager - destroyed
+21:01:09 T:140247702665664   DEBUG: SECTION:UnloadDll(libcurl-gnutls.so.4)
+21:01:09 T:140247702665664   DEBUG: Unloading:
+21:01:09 T:140247702665664   DEBUG: Unloading: /libcpluff-x86_64-linux.so
+21:01:09 T:140247702665664   DEBUG: Unloading: /ImageLib-x86_64-linux.so
+21:01:09 T:140247702665664   DEBUG: Unloading:
+21:01:09 T:140247702665664   DEBUG: LogindUPowerSyscall - delay lock released
