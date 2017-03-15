@@ -12,14 +12,11 @@ import urlparse
 import xbmc
 import xbmcgui
 import xbmcplugin
-import xbmcaddon
 
-from bs4 import BeautifulSoup
 import urllib2
 import re
 
 addonID = 'plugin.video.pbsnewshour'
-addon = xbmcaddon.Addon(addonID)
 
 base_url = sys.argv[0]
 addon_handle = int(sys.argv[1])
@@ -73,6 +70,8 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
         vid_num = vid_num.group(1)
         url = 'https://www.youtube.com/watch' + vid_num
         pg = getRequest(url)
+        # https://www.youtube.com/watch?v=1CoH0aS4K3A
+        # pg = getRequest('http://player.youtube.com/uniplayer/1CoH0aS4K3A/' % (vid_num))
 
     if 'mp4:' in url:
         url = 'http://ga.video.cdn.pbs.org/%s' % url.split('mp4:', 1)[1]
