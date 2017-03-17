@@ -67,19 +67,15 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
     else:  # weekend links are initially posted as youtube vids
         vid_num = re.compile('<span class="youtubeid">(.+?)</span>',
                              re.DOTALL).search(html)
-        vid_num = vid_num.group(1)
-        url = 'https://www.youtube.com/watch' + vid_num
-        pg = getRequest(url)
+        url = vid_num.group(1)
+        # url = 'https://www.youtube.com/watch' + vid_num
+        # pg = getRequest(url)
         # https://www.youtube.com/watch?v=1CoH0aS4K3A
-        # pg = getRequest('http://player.youtube.com/uniplayer/1CoH0aS4K3A/' % (vid_num))
 
-    if 'mp4:' in url:
-        url = 'http://ga.video.cdn.pbs.org/%s' % url.split('mp4:', 1)[1]
-    elif '.m3u8' in url:
-        url = url.replace('800k', '2500k')
-        if 'hd-1080p' in url:
-            url = url.split('-hls-', 1)[0]
-            url = url+'-hls-6500k.m3u8'
+    url = url.replace('800k', '2500k')
+    if 'hd-1080p' in url:
+        url = url.split('-hls-', 1)[0]
+        url = url+'-hls-6500k.m3u8'
     return url
 
 
@@ -110,8 +106,13 @@ def list_videos(url='http://www.pbs.org/newshour/videos/'):
 
 def play_video(path):
     path = getAddonVideo(path)
-    play_item = xbmcgui.ListItem(path=path)
-    xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
+    if '00k' in path:
+        play_item = xbmcgui.ListItem(path=path)
+        xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
+    else:
+        path = 'plugin://plugin.video.youtube/?action=play_video&videoid=' + path
+        play_item = xbmcgui.ListItem(path=path)
+        xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
 
 
 def router():
