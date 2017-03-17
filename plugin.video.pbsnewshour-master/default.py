@@ -48,6 +48,13 @@ def getRequest(url, udata=None, headers=httpHeaders):
     return(page)
 
 
+def deal_with_youtube(html):
+    vid_num = re.compile('<span class="youtubeid">(.+?)</span>',
+                         re.DOTALL).search(html)
+    url = vid_num.group(1)
+    return url
+
+
 # https://github.com/learningit/Kodi-plugins-source/blob/master/plugin.video.thinktv/resources/lib/scraper.py
 # modified from link above
 def getAddonVideo(url, udata=None, headers=httpHeaders):
@@ -57,6 +64,8 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
                          re.DOTALL).search(html)
     if vid_num:
         vid_num = vid_num.group(1)
+        if 'youtube' in vid_num:
+            return deal_with_youtube(html)
         pg = getRequest('http://player.pbs.org/viralplayer/%s/' % (vid_num))
         query = """PBS.videoData =.+?recommended_encoding.+?'url'.+?'(.+?)'"""
         urls = re.compile(query, re.DOTALL).search(pg)
@@ -65,12 +74,7 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
         pg = getRequest('%s?format=json' % url)
         url = json.loads(pg)['url']
     else:  # weekend links are initially posted as youtube vids
-        vid_num = re.compile('<span class="youtubeid">(.+?)</span>',
-                             re.DOTALL).search(html)
-        url = vid_num.group(1)
-        # url = 'https://www.youtube.com/watch' + vid_num
-        # pg = getRequest(url)
-        # https://www.youtube.com/watch?v=1CoH0aS4K3A
+        deal_with_youtube(html)
 
     url = url.replace('800k', '2500k')
     if 'hd-1080p' in url:
@@ -109,7 +113,7 @@ def play_video(path):
     if '00k' in path:
         play_item = xbmcgui.ListItem(path=path)
         xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
-    else:
+    else:  # deal with youtube links
         path = 'plugin://plugin.video.youtube/?action=play_video&videoid=' + path
         play_item = xbmcgui.ListItem(path=path)
         xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
