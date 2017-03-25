@@ -44,7 +44,7 @@ def getRequest(url, udata=None, headers=httpHeaders):
         response.close()
     except Exception:
         page = ""
-        xbmc.log(msg='REQUEST ERROR', level=xbmc.LOGDEBUG)
+        xbmc.log('REQUEST ERROR', level=xbmc.LOGDEBUG)
     return(page)
 
 
@@ -83,11 +83,13 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
     return url
 
 
-# -------------- Create list of videos --------------------
+# -------------- Create list of folders with videos in them -------------------
 def list_folders(url='http://www.pbs.org/newshour/videos'):
     html = getRequest(url)
 
     query = """<div class='videos-by-date cf'><h4>(.+?)</h4>"""
+
+    # first folder is list of full episodes then one folder for each day
     folders = ['Full Episodes'] + re.compile(query, re.DOTALL).findall(html)
 
     listing = []
@@ -98,7 +100,7 @@ def list_folders(url='http://www.pbs.org/newshour/videos'):
                     """.+?href='.+?'.+?src="(.+?)".+?title=".+?" """
             pic = re.compile(query, re.DOTALL).search(html)
         else:
-            query = "<div class='videos-by-date cf'>"\
+            query = "<div class='videos-by-date cf'>" \
                     "<h4>%s</h4>(.+?)</ul></div>" % items
             folder_info = re.compile(query, re.DOTALL).search(html)
             rel_html = folder_info.groups()[0]
@@ -142,6 +144,7 @@ def list_videos(category, url='http://www.pbs.org/newshour/videos/'):
     for vids in videos:
         list_item = xbmcgui.ListItem(label=vids[2],
                                      thumbnailImage=vids[1])
+        list_item.setProperty("Video", "true")
         list_item.setInfo('video', {'title': vids[2]})
         list_item.setProperty('IsPlayable', 'true')
 
@@ -159,12 +162,14 @@ def play_video(path):
     path = getAddonVideo(path)
     if '00k' in path:
         play_item = xbmcgui.ListItem(path=path)
-        xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
+        play_item.setProperty('IsPlayable', 'true')
+        xbmcplugin.setResolvedUrl(addon_handle, True, play_item)
     else:  # deal with youtube links
         path = 'plugin://plugin.video.youtube/?action=play_video&videoid=' \
                 + path
         play_item = xbmcgui.ListItem(path=path)
-        xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
+        play_item.setProperty('IsPlayable', 'true')
+        xbmcplugin.setResolvedUrl(addon_handle, True, play_item)
 
 
 def router():

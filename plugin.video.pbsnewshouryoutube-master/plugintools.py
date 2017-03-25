@@ -4,7 +4,7 @@
 #---------------------------------------------------------------------------
 # License: GPL (http://www.gnu.org/licenses/gpl-3.0.html)
 # Based on code from youtube, parsedom and pelisalacarta addons
-# Author: 
+# Author:
 # Jesús
 # tvalacarta@gmail.com
 # http://www.mimediacenter.info/plugintools
@@ -118,19 +118,19 @@ def _log(message):
     if module_log_enabled:
         xbmc.log("plugintools."+message)
 
-# Parse XBMC params - based on script.module.parsedom addon    
+# Parse XBMC params - based on script.module.parsedom addon
 def get_params():
     _log("get_params")
-    
+
     param_string = sys.argv[2]
-    
+
     _log("get_params "+str(param_string))
-    
+
     commands = {}
 
     if param_string:
         split_commands = param_string[param_string.find('?') + 1:].split('&')
-    
+
         for command in split_commands:
             _log("get_params command="+str(command))
             if len(command) > 0:
@@ -141,7 +141,7 @@ def get_params():
                     commands[key] = value
                 else:
                     commands[command] = ""
-    
+
     _log("get_params "+repr(commands))
     return commands
 
@@ -152,7 +152,7 @@ def read(url):
     f = urllib2.urlopen(url)
     data = f.read()
     f.close()
-    
+
     return data
 
 def read_body_and_headers(url, post=None, headers=[], follow_redirects=False, timeout=None):
@@ -256,7 +256,7 @@ def read_body_and_headers(url, post=None, headers=[], follow_redirects=False, ti
         _log("read_body_and_headers GET request")
     else:
         _log("read_body_and_headers POST request")
-    
+
     # Añade las cabeceras
     _log("read_body_and_headers ---------------------------")
     for header in headers:
@@ -267,20 +267,20 @@ def read_body_and_headers(url, post=None, headers=[], follow_redirects=False, ti
     req = Request(url, post, txheaders)
     if timeout is None:
         handle=urlopen(req)
-    else:        
+    else:
         #Disponible en python 2.6 en adelante --> handle = urlopen(req, timeout=timeout)
         #Para todas las versiones:
         try:
             import socket
             deftimeout = socket.getdefaulttimeout()
             socket.setdefaulttimeout(timeout)
-            handle=urlopen(req)            
+            handle=urlopen(req)
             socket.setdefaulttimeout(deftimeout)
         except:
             import sys
             for line in sys.exc_info():
                 _log( "%s" % line )
-    
+
     # Actualiza el almacén de cookies
     cj.save(ficherocookies)
 
@@ -310,14 +310,14 @@ def read_body_and_headers(url, post=None, headers=[], follow_redirects=False, ti
     # Si falla la repite sustituyendo caracteres especiales
     except:
         req = urllib2.Request(url.replace(" ","%20"))
-    
+
         # Añade las cabeceras
         for header in headers:
             req.add_header(header[0],header[1])
 
         response = urllib2.urlopen(req)
     '''
-    
+
     # Tiempo transcurrido
     fin = time.clock()
     _log("read_body_and_headers Downloaded in %d seconds " % (fin-inicio+1))
@@ -339,7 +339,7 @@ class NoRedirectHandler(urllib2.HTTPRedirectHandler):
 # Parse string and extracts multiple matches using regular expressions
 def find_multiple_matches(text,pattern):
     _log("find_multiple_matches pattern="+pattern)
-    
+
     matches = re.findall(pattern,text,re.DOTALL)
 
     return matches
@@ -349,7 +349,7 @@ def find_single_match(text,pattern):
     _log("find_single_match pattern="+pattern)
 
     result = ""
-    try:    
+    try:
         matches = re.findall(pattern,text, flags=re.DOTALL)
         result = matches[0]
     except:
@@ -368,7 +368,7 @@ def add_item( action="" , title="" , plot="" , url="" , thumbnail="" , fanart=""
     if fanart!="":
         listitem.setProperty('fanart_image',fanart)
         xbmcplugin.setPluginFanart(int(sys.argv[1]), fanart)
-    
+
     if url.startswith("plugin://"):
         itemurl = url
         listitem.setProperty('IsPlayable', 'true')
@@ -396,7 +396,7 @@ def play_resolved_url(url):
 
 def direct_play(url):
     _log("direct_play ["+url+"]")
-
+    
     title = ""
 
     try:
@@ -425,7 +425,7 @@ def show_picture(url):
 
     # Download picture
     urllib.urlretrieve(url, local_file)
-    
+
     # Show picture
     xbmc.executebuiltin( "SlideShow("+local_folder+")" )
 
@@ -449,7 +449,7 @@ def get_data_path():
     _log("get_data_path")
 
     dev = xbmc.translatePath( __settings__.getAddonInfo('Profile') )
-    
+
     # Parche para XBMC4XBOX
     if not os.path.exists(dev):
         os.makedirs(dev)
@@ -496,7 +496,7 @@ def keyboard_input(default_text="", title="", hidden=False):
 
     keyboard = xbmc.Keyboard(default_text,title,hidden)
     keyboard.doModal()
-    
+
     if (keyboard.isConfirmed()):
         tecleado = keyboard.getText()
     else:
