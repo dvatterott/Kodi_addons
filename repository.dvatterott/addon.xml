@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <addon id="repository.dvatterott" name="dvatterott Repo" version="0.0.1" provider-name="Dan Vatterott">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="dvatterott Repo">
+            <info compressed="false">https://raw.githubusercontent.com/dvatterott/Kodi_addons/master/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/dvatterott/Kodi_addons/master/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/dvatterott/Kodi_addons/master/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>dvatterott's repo of Kodi addons</summary>
+            <description>This is a repository of Kodi addons developed by dvatterott.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
