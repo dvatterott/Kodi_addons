@@ -84,11 +84,58 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
 
 
 # -------------- Create list of videos --------------------
-# http://kodi.wiki/view/HOW-TO:Video_addon
-def list_videos(url='http://www.pbs.org/newshour/videos/'):
+def list_folders(url='http://www.pbs.org/newshour/videos'):
     html = getRequest(url)
 
-    query = """<div class='sw-pic maxwidth'>.+?href='(.+?)'.+?src="(.+?)".+?title="(.+?)" """
+    query = """<div class='videos-by-date cf'><h4>(.+?)</h4>"""
+    folders = ['Full Episodes'] + re.compile(query, re.DOTALL).findall(html)
+
+    listing = []
+
+    for items in folders:
+        if items == 'Full Episodes':
+            query = "<div class='sw-pic maxwidth'>" \
+                    """.+?href='.+?'.+?src="(.+?)".+?title=".+?" """
+            pic = re.compile(query, re.DOTALL).search(html)
+        else:
+            query = "<div class='videos-by-date cf'>"\
+                    "<h4>%s</h4>(.+?)</ul></div>" % items
+            folder_info = re.compile(query, re.DOTALL).search(html)
+            rel_html = folder_info.groups()[0]
+
+            query = '<img width="210" height="119" src="(.+?)"'
+            pic = re.compile(query, re.DOTALL).search(rel_html)
+
+        pic = pic.groups()[0]
+        list_item = xbmcgui.ListItem(label=items, thumbnailImage=pic)
+        list_item.setInfo('video', {'title': items, 'genre': 'news'})
+        url = '%s?action=listing&category=%s' % (base_url, items)
+        is_folder = True
+        listing.append((url, list_item, is_folder))
+
+    xbmcplugin.addDirectoryItems(addon_handle, listing, len(listing))
+    xbmcplugin.endOfDirectory(addon_handle)
+
+
+# -------------- Create list of videos --------------------
+# http://kodi.wiki/view/HOW-TO:Video_addon
+def list_videos(category, url='http://www.pbs.org/newshour/videos/'):
+    html = getRequest(url)
+
+    category = urllib2.unquote(category[0]).decode('utf8')
+    # xbmc.log(category, level=xbmc.LOGDEBUG)
+
+    if category == 'Full Episodes':
+        query = """<div class='sw-pic maxwidth'>.+?href='(.+?)'""" \
+                """.+?src="(.+?)".+?title="(.+?)" """
+    else:
+        query = "<div class='videos-by-date cf'>" \
+                "<h4>%s</h4>(.+?)</ul></div>" % category
+        temp_q = re.compile(query, re.DOTALL).search(html)
+        html = temp_q.groups()[0]
+        query = """<div class='photo maxwidth'>.+?href='(.+?)'""" \
+                """.+?src="(.+?)".+?'title'>.+?">(.+?)</a>"""
+
     videos = re.compile(query, re.DOTALL).findall(html)
 
     listing = []
@@ -114,7 +161,8 @@ def play_video(path):
         play_item = xbmcgui.ListItem(path=path)
         xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
     else:  # deal with youtube links
-        path = 'plugin://plugin.video.youtube/?action=play_video&videoid=' + path
+        path = 'plugin://plugin.video.youtube/?action=play_video&videoid=' \
+                + path
         play_item = xbmcgui.ListItem(path=path)
         xbmcplugin.setResolvedUrl(addon_handle, True, listitem=play_item)
 
@@ -125,10 +173,12 @@ def router():
     if params:
         if params['action'][0] == 'play':
             play_video(params['url'][0])
+        elif params['action'][0] == 'listing':
+            list_videos(params['category'])
         else:
             raise ValueError('Invalid paramstring: {0}!'.format(params))
     else:
-        list_videos()
+        list_folders()
 
 
 router()
