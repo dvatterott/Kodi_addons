@@ -24,5 +24,6 @@
         <fanart>fanart.jpg</fanart>
     </assets>
     <news>Brand New Release!</news>
+		<platform>all</platform>
   </extension>
 </addon>
