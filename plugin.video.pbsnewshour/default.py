@@ -103,7 +103,8 @@ def list_folders(url='http://www.pbs.org/newshour/videos'):
             query = "<div class='videos-by-date cf'>" \
                     "<h4>%s</h4>(.+?)</ul></div>" % items
             folder_info = re.compile(query, re.DOTALL).search(html)
-            rel_html = folder_info.groups()[0]
+            if folder_info:  # sometimes their site has bad links
+                rel_html = folder_info.groups()[0]
 
             query = '<img width="210" height="119" src="(.+?)"'
             pic = re.compile(query, re.DOTALL).search(rel_html)
