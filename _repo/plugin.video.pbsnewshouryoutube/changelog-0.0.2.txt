@@ -1,0 +1,2 @@
+- v0.0.2 updated icon.png
+- v0.0.1 initial release
