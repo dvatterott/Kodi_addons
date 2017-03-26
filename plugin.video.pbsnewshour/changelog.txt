@@ -1,2 +1,3 @@
+- v0.0.3 added plots to video links
 - v0.0.2 added folders to initial page
 - v0.0.1 initial release

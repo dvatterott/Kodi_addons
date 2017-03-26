@@ -48,7 +48,7 @@
 
 <addon id="plugin.video.pbsnewshour"
 	name="PBS Newshour"
-	version="0.0.2"
+	version="0.0.3"
 	provider-name="dvatterott">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -70,7 +70,7 @@
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
     </assets>
-    <news>Added subfolders for each day's broadcast</news>
+    <news>Added plots to video links</news>
 		<platform>all</platform>
   </extension>
 </addon>

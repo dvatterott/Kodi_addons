@@ -99,6 +99,7 @@ def list_folders(url='http://www.pbs.org/newshour/videos'):
             query = "<div class='sw-pic maxwidth'>" \
                     """.+?href='.+?'.+?src="(.+?)".+?title=".+?" """
             pic = re.compile(query, re.DOTALL).search(html)
+            plot = 'All full episodes that have aired in the past week.'
         else:
             query = "<div class='videos-by-date cf'>" \
                     "<h4>%s</h4>(.+?)</ul></div>" % items
@@ -108,10 +109,13 @@ def list_folders(url='http://www.pbs.org/newshour/videos'):
 
             query = '<img width="210" height="119" src="(.+?)"'
             pic = re.compile(query, re.DOTALL).search(rel_html)
+            plot = 'All video content associated with %s.' % items
 
         pic = pic.groups()[0]
         list_item = xbmcgui.ListItem(label=items, thumbnailImage=pic)
-        list_item.setInfo('video', {'title': items, 'genre': 'news'})
+        list_item.setInfo('video', {'title': items, 'genre': 'news',
+                                    'plot': '[B]PBS NEWSHOUR[/B][CR][CR]'
+                                    + plot})
         url = '%s?action=listing&category=%s' % (base_url, items)
         is_folder = True
         listing.append((url, list_item, is_folder))
@@ -131,28 +135,43 @@ def list_videos(category, url='http://www.pbs.org/newshour/videos/'):
     if category == 'Full Episodes':
         query = """<div class='sw-pic maxwidth'>.+?href='(.+?)'""" \
                 """.+?src="(.+?)".+?title="(.+?)" """
+        videos = re.compile(query, re.DOTALL).findall(html)
+        plots = []
+        for vids in videos:
+            plot_q = '<div class="bubble-title">%s</div>.+?' \
+                     '<div class="bubble-dek">(.+?)</div>' % vids[2]
+            temp_p = re.compile(plot_q, re.DOTALL).findall(html)
+            if len(temp_p) == 0:
+                plots.append("This is %s. I can't find the plot :/" % vids[2])
+            else:
+                plots.append(temp_p[0])
+
     else:
         query = "<div class='videos-by-date cf'>" \
                 "<h4>%s</h4>(.+?)</ul></div>" % category
         temp_q = re.compile(query, re.DOTALL).search(html)
         html = temp_q.groups()[0]
+        plot_q = '<div class="bubble-dek">(.+?)</div>'
+        plots = re.compile(plot_q).findall(html)
         query = """<div class='photo maxwidth'>.+?href='(.+?)'""" \
                 """.+?src="(.+?)".+?'title'>.+?">(.+?)</a>"""
-
-    videos = re.compile(query, re.DOTALL).findall(html)
+        videos = re.compile(query, re.DOTALL).findall(html)
 
     listing = []
-    for vids in videos:
-        list_item = xbmcgui.ListItem(label=vids[2],
-                                     thumbnailImage=vids[1])
+    for vids, plot in zip(videos, plots):
+        list_item = xbmcgui.ListItem(vids[2],
+                                     thumbnailImage=vids[1],
+                                     iconImage=vids[1])
+        list_item.setInfo('video', {'title': vids[2],
+                                    'plot': '[B]PBS NEWSHOUR[/B][CR][CR]'
+                                    + plot})
         list_item.setProperty("Video", "true")
-        list_item.setInfo('video', {'title': vids[2]})
         list_item.setProperty('IsPlayable', 'true')
 
         url = ("%s?action=%s&title=%s&url=%s&thumbnail=%s"
                % (base_url, 'play', vids[2], vids[0], vids[1]))
-
-        listing.append((url, list_item, False))
+        is_folder = False
+        listing.append((url, list_item, is_folder))
 
     # Add list to Kodi.
     xbmcplugin.addDirectoryItems(addon_handle, listing, len(listing))
