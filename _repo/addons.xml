@@ -16,7 +16,7 @@
     <summary lang="en">Add on for watching PBS Newshour</summary>
     <description lang="en">Add on that uses youtube to display PBS newshour episodes.PBS newshour is the national news broadcast from PBS. It rocks.</description>
     <platform>all</platform>
-    <source>https://github.com/dvatterott/plugin.video.pbsnewshour</source>
+    <source>https://github.com/dvatterott/Kodi_addons/</source>
     <website>http://www.pbs.org/newshour/</website>
     <email>dvatterott@gmail.com</email>
     <license>GPL v2.0</license>
@@ -25,6 +25,7 @@
         <fanart>fanart.jpg</fanart>
     </assets>
     <news>Brand New Release!</news>
+		<platform>all</platform>
   </extension>
 </addon>
 
@@ -41,8 +42,8 @@
         <extension point="xbmc.addon.metadata">
             <summary>dvatterott's repo of Kodi addons</summary>
             <description>This is a repository of Kodi addons developed by dvatterott.</description>
-            <source>https://github.com/dvatterott/plugin.video.pbsnewshour</source>
-            <website>http://www.pbs.org/newshour/</website>
+            <source>https://github.com/dvatterott/Kodi_addons/</source>
+            <website>http://www.danvatterott.com/</website>
             <email>dvatterott@gmail.com</email>
             <license>GPL v2.0</license>
             <assets>
@@ -68,7 +69,7 @@
     <summary lang="en">Add on for watching PBS Newshour</summary>
     <description lang="en">Add on that displays PBS newshour episodes.PBS newshour is the national news broadcast from PBS. It rocks.</description>
     <platform>all</platform>
-    <source>https://github.com/dvatterott/Kodi_addons</source>
+    <source>https://github.com/dvatterott/Kodi_addons/</source>
     <website>http://www.pbs.org/newshour/</website>
     <email>dvatterott@gmail.com</email>
     <license>GPL v2.0</license>
@@ -77,6 +78,7 @@
         <fanart>fanart.jpg</fanart>
     </assets>
     <news>Brand New Release!</news>
+		<platform>all</platform>
   </extension>
 </addon>
 </addons>

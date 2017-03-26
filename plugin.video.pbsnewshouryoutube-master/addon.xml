@@ -15,7 +15,7 @@
     <summary lang="en">Add on for watching PBS Newshour</summary>
     <description lang="en">Add on that uses youtube to display PBS newshour episodes.PBS newshour is the national news broadcast from PBS. It rocks.</description>
     <platform>all</platform>
-    <source>https://github.com/dvatterott/plugin.video.pbsnewshour</source>
+    <source>https://github.com/dvatterott/Kodi_addons/</source>
     <website>http://www.pbs.org/newshour/</website>
     <email>dvatterott@gmail.com</email>
     <license>GPL v2.0</license>
