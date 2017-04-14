@@ -12,6 +12,7 @@ import urlparse
 import xbmc
 import xbmcgui
 import xbmcplugin
+import ssl
 
 import urllib2
 import re
@@ -32,12 +33,13 @@ httpHeaders = {'User-Agent': USERAGENT,
                'Accept-Encoding': 'gzip,deflate,sdch',
                'Accept-Language': 'en-US,en;q=0.8'
                }
+context = ssl._create_unverified_context()
 
 
-def getRequest(url, udata=None, headers=httpHeaders):
+def getRequest(url, udata=None, headers=httpHeaders, context=context):
     req = urllib2.Request(url.encode(UTF8), udata, headers)
     try:
-        response = urllib2.urlopen(req)
+        response = urllib2.urlopen(req, context=context)
         page = response.read()
         if response.info().getheader('Content-Encoding') == 'gzip':
             page = zlib.decompress(page, zlib.MAX_WBITS + 16)
