@@ -182,6 +182,13 @@ def play_video(path):
     path = getAddonVideo(path)
     if '00k' in path:
         play_item = xbmcgui.ListItem(path=path)
+        xbmc.log('adding stream info', level=xbmc.LOGDEBUG)
+        play_item.addStreamInfo('video', {'codec': 'h264',
+                                          'width': 1280,
+                                          'height': 720,
+                                          'aspect': 1.78})
+        play_item.addStreamInfo('audio', {'codec': 'aac',
+                                          'language': 'en'})
         play_item.setProperty('IsPlayable', 'true')
         xbmcplugin.setResolvedUrl(addon_handle, True, play_item)
     else:  # deal with youtube links

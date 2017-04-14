@@ -8,3 +8,5 @@ This is a repsitory of [kodi](https://kodi.tv/) addons that I have built.
 * **repository.dvatterott** is the xml file and icon associated with my kodi repository (basically a lookup table that kodi can use to find my addons on the web).
 
 * **_repo** is a folder with a subfolder for my repository and each plugin. The subfolders contain .zip files that Kodi uses to install the plugins. I used code from [Twilight0's](https://github.com/Twilight0/Repository-Bootstrapper) to build the contents of this folder and my repository structure. If you want to install my repository, grab the zip file in ./\_repo/repository.dvatterott/. These folders also have some info that Kodi displays when users decide whether to install a plugin.
+
+[NOTE FOR ME]: update repo by running python generate_repo.py from ./_tools in a python2 environment.
