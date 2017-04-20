@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30020">
+        <setting type="sep"/>
+        <setting label="30021" type="enum" id="User_Location" lvalues="30022|30023|30024|30025|30026"/>
+        <setting type="sep"/>
+    </category>
+</settings>
