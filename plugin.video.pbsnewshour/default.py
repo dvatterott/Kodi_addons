@@ -79,7 +79,11 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
         deal_with_youtube(html)
 
     url = url.replace('800k', '2500k')
-    if 'hd-1080p' in url:
+    if 'rtmp' in url:
+        url = url.split('videos')[1]
+        url = 'http://ga.video.cdn.pbs.org/videos' + url
+        url = url_dict.split('-mp4-')[0] + '-hls-6500k.m3u8'
+    elif 'hd-1080p' in url:
         url = url.split('-hls-', 1)[0]
         url = url+'-hls-6500k.m3u8'
     return url
