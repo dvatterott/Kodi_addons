@@ -76,7 +76,7 @@
 
 <addon id="plugin.video.pbsnewshour"
 	name="PBS Newshour"
-	version="0.0.6"
+	version="0.0.7"
 	provider-name="dvatterott">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
