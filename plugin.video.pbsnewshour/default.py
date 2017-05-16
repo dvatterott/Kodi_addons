@@ -64,10 +64,8 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
 
     vid_num = re.compile('<span class="coveplayerid">(.+?)</span>',
                          re.DOTALL).search(html)
-    if vid_num:
+    try:
         vid_num = vid_num.group(1)
-        if 'youtube' in vid_num:
-            return deal_with_youtube(html)
         pg = getRequest('http://player.pbs.org/viralplayer/%s/' % (vid_num))
         query = """PBS.videoData =.+?recommended_encoding.+?'url'.+?'(.+?)'"""
         urls = re.compile(query, re.DOTALL).search(pg)
@@ -75,10 +73,10 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
         url = urls.groups()
         pg = getRequest('%s?format=json' % url)
         url = json.loads(pg)['url']
-    else:  # weekend links are initially posted as youtube vids
-        deal_with_youtube(html)
+        url = url.replace('800k', '2500k')
+    except:  # some links are initially posted as youtube vids
+        return deal_with_youtube(html)
 
-    url = url.replace('800k', '2500k')
     if 'rtmp' in url:
         url = url.split('videos')[1]
         url = 'http://ga.video.cdn.pbs.org/videos' + url
