@@ -76,7 +76,7 @@
 
 <addon id="plugin.video.pbsnewshour"
 	name="PBS Newshour"
-	version="0.0.8"
+	version="0.0.9"
 	provider-name="dvatterott">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -98,7 +98,7 @@
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
     </assets>
-    <news>Still finding and fixing bugs related to youtube links</news>
+    <news>Fixed bug related to change in pbs' videos</news>
 		<platform>all</platform>
   </extension>
 </addon>

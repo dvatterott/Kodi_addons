@@ -9,13 +9,12 @@ import zlib
 import json
 import sys
 import urlparse
+import urllib2
+import re
+import ssl
 import xbmc
 import xbmcgui
 import xbmcplugin
-import ssl
-
-import urllib2
-import re
 
 addonID = 'plugin.video.pbsnewshour'
 
@@ -84,6 +83,8 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
     elif 'hd-1080p' in url:
         url = url.split('-hls-', 1)[0]
         url = url+'-hls-6500k.m3u8'
+    elif '720p' in url:
+        url = url.replace('720p.m3u8', '1080p.m3u8')
     return url
 
 
@@ -184,7 +185,7 @@ def list_videos(category, url='http://www.pbs.org/newshour/videos/'):
 
 def play_video(path):
     path = getAddonVideo(path)
-    if '00k' in path:
+    if '00k' in path or '0p' in path:
         play_item = xbmcgui.ListItem(path=path)
         xbmc.log('adding stream info', level=xbmc.LOGDEBUG)
         play_item.addStreamInfo('video', {'codec': 'h264',
