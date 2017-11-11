@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.pbsnewshour"
 	name="PBS Newshour"
-	version="0.0.9"
+	version="0.1.0"
 	provider-name="dvatterott">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -23,7 +23,7 @@
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
     </assets>
-    <news>Fixed bug related to change in pbs' videos</news>
+    <news>Now works with new PBS Newshour site!</news>
 		<platform>all</platform>
   </extension>
 </addon>

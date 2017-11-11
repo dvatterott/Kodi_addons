@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.video.local_weather_videos"
+	name="Your Local Weather Report"
+	version="0.0.1"
+	provider-name="dvatterott">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Add on for watching Local Weather Reports</summary>
+    <description lang="en">This addon presents the most recent weather reports from your local nbc.</description>
+    <platform>all</platform>
+    <source>https://github.com/dvatterott/Kodi_addons/</source>
+    <website>http://www.nbc.com/</website>
+    <email>dvatterott@gmail.com</email>
+    <license>GPL v2.0</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <news>Initial Release!</news>
+		<platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.pbsnewshouryoutube"
 	name="PBS Newshour - Youtube"
 	version="0.0.2"
@@ -29,34 +57,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.local_weather_videos"
-	name="Your Local Weather Report"
-	version="0.0.1"
-	provider-name="dvatterott">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Add on for watching Local Weather Reports</summary>
-    <description lang="en">This addon presents the most recent weather reports from your local nbc.</description>
-    <platform>all</platform>
-    <source>https://github.com/dvatterott/Kodi_addons/</source>
-    <website>http://www.nbc.com/</website>
-    <email>dvatterott@gmail.com</email>
-    <license>GPL v2.0</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-    <news>Initial Release!</news>
-		<platform>all</platform>
-  </extension>
-</addon>
-
     <addon id="repository.dvatterott" name="dvatterott Repo" version="0.0.3" provider-name="Dan Vatterott">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -76,7 +76,7 @@
 
 <addon id="plugin.video.pbsnewshour"
 	name="PBS Newshour"
-	version="0.0.9"
+	version="0.1.0"
 	provider-name="dvatterott">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -98,7 +98,7 @@
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
     </assets>
-    <news>Fixed bug related to change in pbs' videos</news>
+    <news>Now works with new PBS Newshour site!</news>
 		<platform>all</platform>
   </extension>
 </addon>

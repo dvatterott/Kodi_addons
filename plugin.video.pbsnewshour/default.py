@@ -10,6 +10,7 @@ import json
 import sys
 import urlparse
 import urllib2
+from datetime import datetime as dt
 import re
 import ssl
 import xbmc
@@ -50,9 +51,9 @@ def getRequest(url, udata=None, headers=httpHeaders, context=context):
 
 
 def deal_with_youtube(html):
-    vid_num = re.compile('<span class="youtubeid">(.+?)</span>',
-                         re.DOTALL).search(html)
-    url = vid_num.group(1)
+    query = r"""<script type="application\/ld\+json">(.+?)<\/script>"""
+    vid_num = re.compile(query).search(html)
+    url = json.loads(vid_num.group(1))['embedUrl'].split('/')[-1]
     return url
 
 
@@ -60,19 +61,16 @@ def deal_with_youtube(html):
 # modified from link above
 def getAddonVideo(url, udata=None, headers=httpHeaders):
     html = getRequest(url)
-
-    vid_num = re.compile('<span class="coveplayerid">(.+?)</span>',
-                         re.DOTALL).search(html)
+    query = """<iframe.+?src="(.+?)" seamless allowfullscreen></iframe>"""
+    vid_num = re.compile(query, re.DOTALL).search(html)
     try:
-        vid_num = vid_num.group(1)
-        pg = getRequest('http://player.pbs.org/viralplayer/%s/' % (vid_num))
+        pg = getRequest(vid_num.group(1))
         query = """PBS.videoData =.+?recommended_encoding.+?'url'.+?'(.+?)'"""
         urls = re.compile(query, re.DOTALL).search(pg)
 
         url = urls.groups()
         pg = getRequest('%s?format=json' % url)
         url = json.loads(pg)['url']
-        url = url.replace('800k', '2500k')
     except:  # some links are initially posted as youtube vids
         return deal_with_youtube(html)
 
@@ -89,34 +87,29 @@ def getAddonVideo(url, udata=None, headers=httpHeaders):
 
 
 # -------------- Create list of folders with videos in them -------------------
-def list_folders(url='http://www.pbs.org/newshour/videos'):
+def list_folders(url='https://www.pbs.org/newshour/video'):
     html = getRequest(url)
 
-    query = """<div class='videos-by-date cf'><h4>(.+?)</h4>"""
-
     # first folder is list of full episodes then one folder for each day
-    folders = ['Full Episodes'] + re.compile(query, re.DOTALL).findall(html)
+    folders = ['Full Episodes', 'All Videos']
 
     listing = []
 
     for items in folders:
         if items == 'Full Episodes':
-            query = "<div class='sw-pic maxwidth'>" \
-                    """.+?href='.+?'.+?src="(.+?)".+?title=".+?" """
+            query = ("""<img class="lazyload" data-srcset=".+? 425w,"""
+                     """.+? 768w, (.+?) 1024w" alt="">""")
             pic = re.compile(query, re.DOTALL).search(html)
             plot = 'All full episodes that have aired in the past week.'
         else:
-            query = "<div class='videos-by-date cf'>" \
-                    "<h4>%s</h4>(.+?)</ul></div>" % items
-            folder_info = re.compile(query, re.DOTALL).search(html)
-            if folder_info:  # sometimes their site has bad links
-                rel_html = folder_info.groups()[0]
-
-            query = '<img width="210" height="119" src="(.+?)"'
-            pic = re.compile(query, re.DOTALL).search(rel_html)
-            plot = 'All video content associated with %s.' % items
+            query = ("""<div class="playlist__img" style="background-image: """
+                     """url\('(.+?)'\)">""")
+            pic = re.compile(query, re.DOTALL).search(html)
+            plot = 'All pbs newshour videos.'
 
         pic = pic.groups()[0]
+        if '180x0' in pic:
+            pic = pic.replace('180x0', '1024x0')
         list_item = xbmcgui.ListItem(label=items, thumbnailImage=pic)
         list_item.setInfo('video', {'title': items, 'genre': 'news',
                                     'plot': '[B]PBS NEWSHOUR[/B][CR][CR]'
@@ -129,52 +122,54 @@ def list_folders(url='http://www.pbs.org/newshour/videos'):
     xbmcplugin.endOfDirectory(addon_handle)
 
 
+def key_func(s):
+    reg_out = re.findall(r"""episode-(.+?-\d+-\d+)""", s)[0]
+    if len(reg_out) < 12:
+        output = dt.strptime(reg_out, "%b-%d-%Y")
+    else:
+        output = dt.strptime(reg_out, "%B-%d-%Y")
+    return output
+
+
 # -------------- Create list of videos --------------------
 # http://kodi.wiki/view/HOW-TO:Video_addon
-def list_videos(category, url='http://www.pbs.org/newshour/videos/'):
+def list_videos(category, url='https://www.pbs.org/newshour/video'):
     html = getRequest(url)
 
     category = urllib2.unquote(category[0]).decode('utf8')
     # xbmc.log(category, level=xbmc.LOGDEBUG)
 
     if category == 'Full Episodes':
-        query = """<div class='sw-pic maxwidth'>.+?href='(.+?)'""" \
-                """.+?src="(.+?)".+?title="(.+?)" """
-        videos = re.compile(query, re.DOTALL).findall(html)
+        query = ("""<a href="(https://www.pbs.org/newshour/show/""" +
+                 """pbs-newshour-.+?)" class=".+?">""")
+        links = list(set(re.compile(query).findall(html)))
+        videos = sorted(links, key=key_func, reverse=True)
         plots = []
         for vids in videos:
-            plot_q = '<div class="bubble-title">%s</div>.+?' \
-                     '<div class="bubble-dek">(.+?)</div>' % vids[2]
-            temp_p = re.compile(plot_q, re.DOTALL).findall(html)
-            if len(temp_p) == 0:
-                plots.append("This is %s. I can't find the plot :/" % vids[2])
-            else:
-                plots.append(temp_p[0])
+            plots.append("Full Episode of %s" % '-'.join(vids.split('-')[-3:]))
 
     else:
-        query = "<div class='videos-by-date cf'>" \
-                "<h4>%s</h4>(.+?)</ul></div>" % category
-        temp_q = re.compile(query, re.DOTALL).search(html)
-        html = temp_q.groups()[0]
-        plot_q = '<div class="bubble-dek">(.+?)</div>'
-        plots = re.compile(plot_q).findall(html)
-        query = """<div class='photo maxwidth'>.+?href='(.+?)'""" \
-                """.+?src="(.+?)".+?'title'>.+?">(.+?)</a>"""
-        videos = re.compile(query, re.DOTALL).findall(html)
+        query = ("""<a href="(.+?)" class="card-sm__title">"""
+                 """<span>(.+?)</span></a>""")
+        videos = re.compile(query).findall(html)
+        plots = [x[1] for x in videos]
+        videos = [x[0] for x in videos]
 
     listing = []
     for vids, plot in zip(videos, plots):
-        list_item = xbmcgui.ListItem(vids[2],
-                                     thumbnailImage=vids[1],
-                                     iconImage=vids[1])
-        list_item.setInfo('video', {'title': vids[2],
-                                    'plot': '[B]PBS NEWSHOUR[/B][CR][CR]'
-                                    + plot})
+        list_item = xbmcgui.ListItem(' '.join(vids.split('-')[-3:]).title(),
+                                     thumbnailImage=vids,
+                                     iconImage=vids)
+        list_item.setInfo('video',
+                          {'title': ' '.join(vids.split('-')[-3:]).title(),
+                           'plot': '[B]PBS NEWSHOUR[/B][CR][CR]' + plot})
         list_item.setProperty("Video", "true")
         list_item.setProperty('IsPlayable', 'true')
 
         url = ("%s?action=%s&title=%s&url=%s&thumbnail=%s"
-               % (base_url, 'play', vids[2], vids[0], vids[1]))
+               % (base_url, 'play',
+                  ' '.join(vids.split('-')[-3:]).title(),
+                  vids, vids))
         is_folder = False
         listing.append((url, list_item, is_folder))
 
