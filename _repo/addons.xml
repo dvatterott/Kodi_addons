@@ -57,7 +57,7 @@
   </extension>
 </addon>
 
-    <addon id="repository.dvatterott" name="dvatterott Repo" version="0.0.3" provider-name="Dan Vatterott">
+    <addon id="repository.dvatterott" name="dvatterott Repo" version="0.0.4" provider-name="Dan Vatterott">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
